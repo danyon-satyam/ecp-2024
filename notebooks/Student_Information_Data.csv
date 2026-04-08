@@ -1,0 +1,351 @@
+Timestamp,Roll No.,Gender,Age,Address ,"Study Time (Per hours in a Day, including Classes)",1st Semester CGPA,2nd Semester CGPA ,3rd Semester CGPA ,4th Semester CGPA,"5th Semester CGPA (If you are in 4th Sem, Expected CGPA)",Attendance (Previous Semester),"Active Backlogs (E.g. 0, 1, 2, 3)",Extra Curricular Activities ,Feedback (About satisfaction of academic studies at our University),"Emotional Feedback  (According to CGPA, Attendance, & Study Hours)"
+2024/02/28 7:42:11 pm GMT+5:30,21cse241,Female,21,"Bhubaneswar, Odisha ",12,7.2,7.6,8,8,9,92,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS;Any Certification Course",Satisfactory,Happy
+2024/02/28 7:43:28 pm GMT+5:30,21cse149,Male,20,"Ranchi , Ranchi ,Jharkhand ",11,6.48,6.42,6.3,6.3,7.96,94,0,"NSS;GDSC Certifications , ",Good,Neutral
+2024/02/28 7:44:16 pm GMT+5:30,21CSE296,Male,21,"Sambalpur,Odisha",11,7.26,7.8,7.65,7.85,8.2,70,0,NCC;Any Certification Course,Satisfactory,Sad
+2024/02/28 7:44:41 pm GMT+5:30,21CSE285,Male,21,"Baliapal, Balasore, Odisha ",11,7.74,8.82,8.26,8.3,8.57,92,0,NPTEL Courses;Any Certification Course,Satisfactory,Happy
+2024/02/28 7:44:43 pm GMT+5:30,21cse439,Male,22,"Rourkela, Sundargarh ",9,7.91,7.35,7.61,7.5,8.65,84,0,NPTEL Courses;Any Certification Course,Satisfactory,Neutral
+2024/02/28 7:44:53 pm GMT+5:30,21CSE532,Male,20,"Gunupur, Rayagada, Odisha",10,7.48,7.65,7.39,7,7.87,80,0,NPTEL Courses;Any Certification Course;Web Development ,Satisfactory,Sad
+2024/02/28 7:44:54 pm GMT+5:30,21CSE399 ,Male,21,"Balangir, Odisha",7,6.96,6.78,6.49,6.31,6.57,84,1,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Satisfactory,Neutral
+2024/02/28 7:45:16 pm GMT+5:30,22CSE045,Male,18,"Dhanagar, Kalahandi, Odisha",10,9.2,9.23,,,,94,0,NPTEL Courses;Any Certification Course,Excellent,Happy
+2024/02/28 7:45:18 pm GMT+5:30,21CSE272,Male,21,"Rayagada, Rayagada,ODISHA",9,6.35,6.41,6.51,6.54,6.53,82,1,,Satisfactory,Sad
+2024/02/28 7:45:32 pm GMT+5:30,21CSE637,Male,21,"At- Champeipal, Po-Tarangasagar, Dist- Jajpur, Odisha, Pin -755006",14,7.57,7.87,8.39,7.6,8.61,76,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Satisfactory,Neutral
+2024/02/28 7:45:38 pm GMT+5:30,21CSE567,Male,21,"Itamati, Nayagarh, odisha",11,9.1,8.6,8.2,8.2,8.1,93,0,NPTEL Courses;Any Certification Course,Excellent,Glad
+2024/02/28 7:45:46 pm GMT+5:30,22CSE184,Male,19,"Chandikhol, jajpur, Odisha ",12,7.84,8.5,0,0,0,92,0,NPTEL Courses;Any Certification Course,Bad,Neutral
+2024/02/28 7:45:52 pm GMT+5:30,22cse200,Male,19,"Purushottampur, Ganjam, Odisha",9,6.8,6.8,,,,85.8,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Bad,Neutral
+2024/02/28 7:46:03 pm GMT+5:30,21CSEAIML006,Male,21,"Rourkela, Sundargarh, Odisha",12,8.61,8.02,7.55,7.37,7.66,82,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS",Satisfactory,Happy
+2024/02/28 7:46:34 pm GMT+5:30,21cseds046,Female,21,Berhampure ,9,6.91,6.63,6.49,6.18,6.36,79,1,,Excellent,Neutral
+2024/02/28 7:46:40 pm GMT+5:30,21CSE050,Male,21,"Nayagarh, Nayagarh, Odisha ",10,8.96,8.91,9.04,9.01,9.09,94,0,NPTEL Courses;Any Certification Course;OB,Good,Happy
+2024/02/28 7:46:43 pm GMT+5:30,21CSEDS001,Male,21,"Chatrapur, Ganjam, Odisha",10,8.96,8.67,8.65,8.66,8.71,96.37,0,NPTEL Courses;Any Certification Course,Good,Neutral
+2024/02/28 7:47:01 pm GMT+5:30,21CSE190,Male,21,"Jamshedpur , East Singhbhum, Jharkhand ",12,6.52,7,6.52,7.2,7.96,94.57,0,"Any Certification Course;Udemy , great learning ",Good,Neutral
+2024/02/28 7:47:07 pm GMT+5:30,22cse211,Male,20,"Danr ,katkamsandi, hazaribagh, Jharkhand ",10,8.09,9.09,,,,83,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Good,Neutral
+2024/02/28 7:47:10 pm GMT+5:30,22CSE085,Male,20,"Rourkela, Sundargarh, Odisha",8,7.27,9.23,,,,80,0,NPTEL Courses,Good,Neutral
+2024/02/28 7:47:13 pm GMT+5:30,21cse457,Male,20,"At/Po-Kankadajodi, Cuttack, Odisha",8,7.04,7.04,7.04,7.14,7.25,80,0,Any Certification Course,Good,Happy
+2024/02/28 7:47:19 pm GMT+5:30,21CSE150,Male,20,"Jharsuguda, Odisha",11,8.7,9.04,9.09,8.93,8.84,90.13,0,NPTEL Courses;Any Certification Course,Good,Happy
+2024/02/28 7:47:40 pm GMT+5:30,21cse134,Female,20,"Gunupur, rayagada, orissa",14,8.46,9.2,7.9,8,8.61,81,0,NPTEL Courses;OB;Other. (Please Specify),Bad,Neutral
+2024/02/28 7:47:56 pm GMT+5:30,21cse655,Male,22,"Birgunj, Parsa, Province-2, Nepal",11,7.39,7,7.14,7.39,7.74,76.04,0,NPTEL Courses;Any Certification Course,Good,Happy
+2024/02/28 7:48:25 pm GMT+5:30,21CSE342,Male,21,"Baliapal, Baleswar, Odisha",12,7.09,7.11,6.99,7,7.25,89,0,NPTEL Courses;Any Certification Course,Good,Happy
+2024/02/28 7:48:34 pm GMT+5:30,21cse582,Female,22,"Bhadrak, bhadrak, odisha",12,8.31,8.2,8.26,8.34,8.44,88,0,NPTEL Courses;Dance,Satisfactory,Neutral
+2024/02/28 7:49:53 pm GMT+5:30,21cse128,Female,21,"Daudnagar, Aurangabad, Bihar ",12,6.48,6.52,6.57,6.52,7.9,84.86,0,Any Certification Course,Excellent,Neutral
+2024/02/28 7:50:04 pm GMT+5:30,21CSE080,Male,21,"RAYAGADA,ODISHA",10,8.61,8.3,7.17,7.71,8.83,89.23,0,NPTEL Courses;Any Certification Course,Satisfactory,Neutral
+2024/02/28 7:51:08 pm GMT+5:30,22CSE942,Male,19,"Palasa, srikakulam, Andhra Pradesh ",7,7.24,7.24,,,,89,0,NPTEL Courses;Codsoft internship going on ,Satisfactory,Neutral
+2024/02/28 7:51:11 pm GMT+5:30,21cse067,Female,20,"Athagarh,Cuttack, Odisha ",11,8.4,8.54,8.31,7.8,9.13,95,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Good,Happy
+2024/02/28 7:51:28 pm GMT+5:30,21CSE111,Male,21,"Krushnaprasad, Puri, Odisha",10,7.09,7.26,7.38,7.3,7.38,95.1,0,Gaining knowledge and increasing from YouTube and different websites about my domain i.e web development,Good,Neutral
+2024/02/28 7:52:39 pm GMT+5:30,21CSE009,Male,20,"RAYAGADA, ODISHA ",10,6.83,7.17,7.09,7.17,7.35,88.49,0,NPTEL Courses;Any Certification Course,Excellent,Happy
+2024/02/28 7:53:03 pm GMT+5:30,21cse209,Male,20,"Bokaro steel city ,bokaro(827001), jharkhand ",11,7.35,7.28,8,8.2,8.74,93,1,NPTEL Courses;Any Certification Course,Good,Tired 
+2024/02/28 7:54:21 pm GMT+5:30,21CSE491,Male,22,"Koderma, Jharkhand ",1,6.5,6.4,7,7.25,8,75,0,Any Certification Course,Excellent,Glad
+2024/02/28 7:55:25 pm GMT+5:30,21CSE106,Male,20,"Cuttack, Cuttack,Odisha",11,7.52,7.63,7.84,7.78,7.85,94.3,0,NPTEL Courses;Spoken tutorial c training ,Good,Happy
+2024/02/28 7:55:37 pm GMT+5:30,21CSE216,Male,21,"Gunupur, Rayagada, Odisha ",11,8.61,8.87,8.97,8.94,8.97,89.04,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Satisfactory,Neutral
+2024/02/28 8:00:09 pm GMT+5:30,21CSE460,Male,20,"Rourkela, Sundergarh, Odisha",12,8,8.24,8.39,8.4,8.49,92,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Good,Neutral
+2024/02/28 8:00:17 pm GMT+5:30,21CSE465,Male,21,"Jaleswar,Baleswar,Odisha",10,7.3,8.04,8.04,8.04,8.2,90,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Satisfactory,Neutral
+2024/02/28 8:00:53 pm GMT+5:30,21cse087,Male,21,"Kashinagar, gajapati , odisha ",14,7.8,8.3,7.6,8.4,8.8,90,0,NPTEL Courses;Any Certification Course,Good,Happy
+2024/02/28 8:02:00 pm GMT+5:30,21cse100,Male,21,"RAYAGADA,ODHISA",10,7.8,7.2,6.7,7.6,8.3,85.6,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Excellent,Happy
+2024/02/28 8:02:22 pm GMT+5:30,21CSE065,Female,20,"Gunupur, Rayagada,odisha",10,7.78,7.78,8.61,8.3,8.9,83,0,NPTEL Courses;Any Certification Course;Internship at lagazon and eduversity ,Satisfactory,Neutral
+2024/02/28 8:04:55 pm GMT+5:30,21CSEDS032,Male,20,"Bissam Cuttack, Rayagada, Odisha",12,7,7.22,7.12,7.18,7.38,98.87,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course;Introduction to Data Science- Infosys Spring Board, Introduction to Data Science - IBM by Coursera, etc.",Excellent,Glad
+2024/02/28 8:06:24 pm GMT+5:30,21CSE108,Male,20,"Singhpur, Jajpur, Odisha ",11,7.5,8.7,8.8,8.3,8.5,84,0,NPTEL Courses;Any Certification Course,Good,Neutral
+2024/02/28 8:08:47 pm GMT+5:30,21cse645,Male,21,"Berhampur ,ganjam,odisha",12,7.74,7,6.83,6.65,8.22,77,0,NPTEL Courses,Satisfactory,Sad
+2024/02/28 8:09:37 pm GMT+5:30,21CSEDS013,Female,21,"Champua, Keonjhar, Odisha ",14,8.43,8.34,8.5,8.4,8.9,78,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC;Any Certification Course;OB",Excellent,Neutral
+2024/02/28 8:10:24 pm GMT+5:30,21cse271,Male,19,"Paralakhemundi, gajapati, odisha ",11,6.96,7.3,7.17,7.55,8.12,85.97,0,NPTEL Courses;Any Certification Course,Good,Happy
+2024/02/28 8:11:32 pm GMT+5:30,21cse500,Female,20,"Dharmashala, jajpur, odisha ",13,6.83,7.15,7.17,7.35,7.73,95.97,0,NPTEL Courses;Any Certification Course,Excellent,Happy
+2024/02/28 8:11:50 pm GMT+5:30,21cseds034,Male,20,Balasore ,10,7.9,8.04,7.5,7.4,8,85,0,NPTEL Courses,Satisfactory,Neutral
+2024/02/28 8:12:55 pm GMT+5:30,21CSEDS023,Male,21,"Berhampur, Ganjam, Odisha ",15,7.9,8.76,8.21,7.6,8.91,79,0,Any Certification Course,Satisfactory,Sad
+2024/02/28 8:15:31 pm GMT+5:30,21CSE251,Male,21,"Paralakhemundi, Gajapati, Odisha ",12,7.3,7.87,7.74,7.74,7.75,80,0,NPTEL Courses,Bad,Sad
+2024/02/28 8:17:29 pm GMT+5:30,21cse419,Female,21,"Berhampur, Ganjam, Odisha ",17,8.52,7.67,7.97,8.13,8.4,92,1,NPTEL Courses;Any Certification Course,Excellent,Sad
+2024/02/28 8:17:58 pm GMT+5:30,22CSE665,Male,19,"Niali, Cuttack, Odisha ",3,8.03,8.01,,,,89.46,0,"NPTEL Courses;NSS;Any Certification Course;Movies, mobile games ",Bad,Sad
+2024/02/28 8:18:39 pm GMT+5:30,22CSE917,Female,19,"Bissamcuttack, Rayagada, Odisha ",10,9.32,8.98,,,,91.8,0,NPTEL Courses;NSS;Any Certification Course,Satisfactory,Neutral
+2024/02/28 8:19:17 pm GMT+5:30,21CSEDS017 ,Male,21,"Gunupur, Odisha",12,7.22,7.48,7.5,7.31,8.17,82.91,0,Any Certification Course,Good,Neutral
+2024/02/28 8:19:57 pm GMT+5:30,21CSE374,Female,20,"Kinjirkela,Sundargarh Odisha ",3,6.3,6.4,6.5,6.8,7.1,92,0,Any Certification Course,Good,Sad
+2024/02/28 8:20:45 pm GMT+5:30,21cseds026,Male,20,"Nuabazar , Bhadrak ,Odisha ",12,7.4,7.7,7.5,7.4,7.4,82,0,Any Certification Course,Bad,Sad
+2024/02/28 8:23:18 pm GMT+5:30,22CSE868,Male,19,"KHURIGAM , GAJAPATI DIST. , ODISHA",12,9.23,9.27,,,,94.44,0,NPTEL Courses,Satisfactory,Neutral
+2024/02/28 8:24:10 pm GMT+5:30,21CSE310,Male,21,"Kosagumuda, Nabarangpur, Odisha ",10,7.45,7.2,7.3,7.2,7.5,78,0,Any Certification Course,Bad,Happy
+2024/02/28 8:24:46 pm GMT+5:30,22CSE588,Male,20,"Dhanbad, Jharkhand ",10,8.36,8.5,,,,92,0,NPTEL Courses,Good,Happy
+2024/02/28 8:25:15 pm GMT+5:30,21cse464 ,Female,20,"Dharamgarh, Kalahandi, Odisha ",14,8.04,8.43,8.16,8.11,8.2,96.47,0,NPTEL Courses;Any Certification Course,Excellent,Happy
+2024/02/28 8:25:53 pm GMT+5:30,21CSE091,Male,21,"Kupari, Baleshwar, odisha ",11,7,6.9,6.82,7.32,8.46,89.25,0,NPTEL Courses;NSS;Any Certification Course,Excellent,Neutral
+2024/02/28 8:39:05 pm GMT+5:30,21cse089,Female,20,"Berhampur, Ganjam",11,8,8.4,8.4,8.5,8.5,82,0,NPTEL Courses;Any Certification Course,Good,Sad
+2024/02/28 8:40:09 pm GMT+5:30,21CSE141,Female,20,"Bhanjanagar ganjam, odisha ",11,6.5,6.2,6.4,6.4,6.7,85,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS;Any Certification Course",Good,Sad
+2024/02/28 8:40:37 pm GMT+5:30,21CSE305,Female,21,Rayagada ,11,6,6.23,6.36,6.59,7,92,0,NPTEL Courses;Any Certification Course,Good,Sad
+2024/02/28 8:41:52 pm GMT+5:30,21cse648,Male,20,"Birubandh, bokaro, jharkhand, 828303",10,8,7.3,7.4,7.2,9.1,92,3,NPTEL Courses;Any Certification Course,Excellent,Happy
+2024/02/28 9:06:02 pm GMT+5:30,21CSE624,Male,21,"Keonjhar,keonjhar,odisha",10,9.22,9.15,9.03,8.96,9.06,82.91,0,Any Certification Course,Satisfactory,Angry
+2024/02/28 9:09:17 pm GMT+5:30,21cse280,Female,21,"Govindapalli, Malkangiri, odisha ",10,6.7,9.13,7.96,8.25,8.65,92,0,NPTEL Courses;Any Certification Course,Excellent,Happy
+2024/02/28 9:19:46 pm GMT+5:30,21CSE255,Male,20,"Jajpur, odisha ",12,7.3,8.3,8.1,8.7,8.5,84,0,Any Certification Course,Good,Happy
+2024/02/28 9:50:17 pm GMT+5:30,21CSEDS027,Male,23,"Jamshedpur , East singhbhum , Jharkhand",11,7.39,7.54,7.29,7.19,7.26,82,0,"Leet code , Hackerrank",Good,Happy
+2024/02/28 10:06:05 pm GMT+5:30,21CSE575,Female,21,"Gunupur, Rayagada, Odisha",10,8.35,8.39,8.23,8.19,8.31,89.45,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Excellent,Neutral
+2024/02/28 10:06:39 pm GMT+5:30,21cseds007,Male,22,"Greater Faridabad, Haryana ",12,6.87,6.57,6.09,6.24,6.46,81,2,NPTEL Courses;Any Certification Course,Good,Neutral
+2024/02/28 10:18:29 pm GMT+5:30,21cse497 ,Male,22,Odisha,12,7.8,7.9,7.7,7.9,8.34,81,0,NPTEL Courses;Any Certification Course;Blockchain ,Satisfactory,Neutral
+2024/02/28 10:35:47 pm GMT+5:30,21CSE153,Male,21,"Gopalpur, Ganjam, Odisha ",11,8.09,8.46,8.36,8.3,8.29,87,0,NPTEL Courses;Any Certification Course,Good,Neutral
+2024/02/28 10:39:14 pm GMT+5:30,21CSE109,Female,20,"Bhubaneswar, jajpur,odisha",9,6.5,6.8,6.54,7,7.7,88,0,NPTEL Courses;NSS;Any Certification Course,Excellent,Neutral
+2024/02/28 10:48:13 pm GMT+5:30,21cse281,Male,21,"Aska,Ganjam,Odisha",8,6.74,6.7,7.13,6.9,6.96,79.86,0,NPTEL Courses,Good,Neutral
+2024/02/28 11:12:35 pm GMT+5:30,21CSE171,Male,20,"City-Bihar Sharif,   District - Nalanda,  State- Bihar",11,6.65,6.65,6.1,6.35,6.75,88.9,2,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Good,Happy
+2024/02/28 11:22:40 pm GMT+5:30,21CSE076,Male,21,"Jamshedpur,East-singhbhum, Jharkhand ",12,6.35,6.43,4.61,4.2,,74.12,4,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Good,Neutral
+2024/02/28 11:26:08 pm GMT+5:30,22CSE363,Male,20,"Keonjhar, Keonjhar, Odisha",8,7.01,7.34,,,,95.03,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS;Any Certification Course;District level cricket cirtificate, online gaming cirtificate",Good,Happy
+2024/02/28 11:30:36 pm GMT+5:30,21cse202,Female,20,"Gunupur, odisha ",14,7,7,7,7,8.2,82,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC;Any Certification Course;OB",Excellent,Happy
+2024/02/28 11:45:06 pm GMT+5:30,22cseds058,Male,20,"Gunupur,Rayagada,odisha",10,8.59,8.4,,,,90,0,NPTEL Courses,Good,Neutral
+2024/02/28 11:45:22 pm GMT+5:30,22cseds018,Female,19,"Govind Bihar 6th lane , extension 1, Berhampur, Ganjam,Odisha ",9,9.4,9.55,,,,86,0,NPTEL Courses,Good,Neutral
+2024/02/29 12:44:47 am GMT+5:30,Swayangprava Biswal,Female,20,"Balasore, Odisha",15,7.61,7.59,7.58,7.64,7.79,97,0,NPTEL Courses;Any Certification Course;Internship,Bad,Sad
+2024/02/29 1:07:20 am GMT+5:30,21CSE278 ,Female,21,"Puri,odisha,india",20,7.03,6.57,7.7,8.6,8.9,85,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Bad,Sad
+2024/02/29 7:54:31 am GMT+5:30,21cse290,Female,20,"Umerkote, Nabrangpur, Odisha ",10,6.54,6.72,6.58,7.2,7.83,84,0,NPTEL Courses;NCC,Good,Neutral
+2024/02/29 8:06:40 am GMT+5:30,21CSE217,Male,19,Rayagada Odisha ,10,6.4,6.5,6.5,6.4,7.1,86,0,Internship ,Good,Happy
+2024/02/29 8:18:05 am GMT+5:30,21CSE584,Female,21,"Gunupur, Rayagada, Odisha",18,8.74,8.67,8.9,8.91,9.06,95.56,0,NPTEL Courses;Any Certification Course;OB,Satisfactory,Neutral
+2024/02/29 10:05:03 am GMT+5:30,21CSEDS014,Male,21,Soro,0,8.11,8.26,8.1,8.13,8.26,82,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Excellent,Neutral
+2024/02/29 10:08:55 am GMT+5:30,21CSEAIML062,Male,20,"Gunupur, Rayagada, Odisha ",10,7.83,7.67,7.38,7.25,7.44,90.5,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Satisfactory,Sad
+2024/02/29 11:43:22 am GMT+5:30,21CSEAIML041,Male,21,"Odisha,sundhergard, Rourkela ",10,7.1,6.9,6.8,6.66,6.87,85,0,NPTEL Courses,Good,Neutral
+2024/02/29 11:52:15 am GMT+5:30,21CSE082,Male,21,"Kesinga,kalahandi,Odisha ",12,7.87,8.02,7.74,7.76,7.92,91.09,0,Any Certification Course,Good,Happy
+2024/02/29 12:14:39 pm GMT+5:30,Prahallada Mahapatro,Male,19,"Berhampur, Ganjam, Odisha",9,9.43,9.17,9.04,8.99,9.05,90,0,NPTEL Courses;Any Certification Course,Satisfactory,Neutral
+2024/02/29 12:29:33 pm GMT+5:30,21CSE045,Male,20,"Balasore, Balasore, Odisha ",10,6.4,6.43,6.65,7.55,8.04,96,0,Any Certification Course,Satisfactory,Neutral
+2024/02/29 2:28:42 pm GMT+5:30,21CSEDS047,Male,20,"SERAIKELLA, SERAIKELLA-KHARSAWAN, JHARKHAND ",11,7.1,8,6.9,7,7.3,77,0,NPTEL Courses;Any Certification Course,Good,Happy
+2024/02/29 4:46:09 pm GMT+5:30,21cse431,Male,21,Vasundhara enclave New Delhi 110096,12,7.5,7.54,7.5,6.89,7.54,81,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Bad,Sad
+2024/02/29 5:59:41 pm GMT+5:30,21CSE614,Female,20,"Gunupur, Rayagada,Odisha",11,8.48,8.52,8.65,8.7,8.86,96.16,0,NPTEL Courses;Any Certification Course,Good,Happy
+2024/02/29 11:47:05 pm GMT+5:30,21CSEAIML005 ,Male,21,"Rourkela, Sundargarh, Odisha",8,6.3,6.41,5.86,5.88,5.91,85,5,NPTEL Courses,Good,Happy
+2024/03/01 5:33:55 am GMT+5:30,21CSE389,Male,23,"Berhampur,Ganjam, Odisha",12,8.26,8.48,8.36,8.25,8.13,81.5,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);OB",Satisfactory,Neutral
+2024/03/01 7:00:13 am GMT+5:30,21CSE571,Female,20,"JAMSHEDPUR, EAST SINGHBHUM, JHARKHAND",11,8.69,8.37,9.13,8.95,9.24,94.44,0,NPTEL Courses;NSS;Any Certification Course,Good,Happy
+2024/03/01 7:20:35 am GMT+5:30,22CSEDS051,Female,20,"Redhakhol, Sambalpur, Odisha ",8,9.36,9.48,,,,84,0,NPTEL Courses,Satisfactory,Neutral
+2024/03/01 7:50:40 am GMT+5:30,21CSE066,Male,21,"Tangi, Cuttack, Odisha ",11,6.57,6.76,6.64,6.83,7.08,92.39,0,NPTEL Courses;Any Certification Course,Excellent,Happy
+2024/03/01 8:33:44 am GMT+5:30,21CSE107 ,Male,19,"Talua,jajpur,odisha",10,6.96,7,6.97,6.84,7.01,87.21,0,NPTEL Courses;Any Certification Course,Excellent,Happy
+2024/03/01 11:32:12 am GMT+5:30,21CSE621,Female,20,"Post office stree, Bikrampur, Gunupur, Rayagada, Odisha",11,9.09,9.35,9.3,9.17,9.27,90.71,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Bad,Neutral
+2024/03/01 4:34:53 pm GMT+5:30,21CSE386,Male,20,"Kosagumuda, Nabarangpur,odisha",8,7.74,7.76,7.65,7.48,7.44,78.75,0,NPTEL Courses;Any Certification Course;Grand final hackathon certificate,Good,Happy
+2024/03/01 6:40:23 pm GMT+5:30,21cseds061,Male,22,"labanyagada,gajapati,odisha",7,8.2,8.2,6.6,7.11,7.26,85,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Satisfactory,Neutral
+2024/03/01 6:40:32 pm GMT+5:30,21cse600,Male,21,"Gunupur,Rayagada,odisha",11,7.43,7.5,7.57,7.78,7.9,87,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Good,Sad
+2024/03/01 6:41:27 pm GMT+5:30,21CSE476,Male,21,Bhubaneswar ,6,7,7,6,6,6,79,6,Any Certification Course,Excellent,Sad
+2024/03/01 6:50:33 pm GMT+5:30,21cse060,Male,20,"JHARKHAND, Bokaro Steel City ",13,7.9,8.7,8.4,8,8.6,88,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course;",Good,Happy
+2024/03/01 7:27:04 pm GMT+5:30,21CSEAIML056,Male,20,"Rourkela, Sundergarh, Odisha",10,7.8,7.7,7.5,8.05,8.3,88,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS;Any Certification Course;OB",Satisfactory,Sad
+2024/03/01 9:18:32 pm GMT+5:30,21cse306,Male,21,"Kamakhyanagar, Dhenkanal, Odisha ",13,7.45,7.17,6.99,7.49,7.99,93,0,NPTEL Courses;NSS,Satisfactory,Neutral
+2024/03/01 9:47:13 pm GMT+5:30,21CSE636,Male,21,"Rayagada, rayagada, odisha",14,6.8,7,7,7.2,7.5,93.4,1,NPTEL Courses;Any Certification Course,Good,Happy
+2024/03/01 10:02:48 pm GMT+5:30,21cse246,Male,21,"GIET Gunupur, Rayagada, Odisha ",10,6.7,7.4,6.89,7.1,8.2,78.3,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC;Any Certification Course",Good,Neutral
+2024/03/01 10:42:16 pm GMT+5:30,21CSEAIML002,Male,21,"Rourkela, Sundargarh, Odisha",10,6.8,6.5,5.7,6.4,6.7,72,8,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS;OB",Good,Neutral
+2024/03/02 10:06:59 am GMT+5:30,21CSE565,Female,20,"Laxmi Sagar, Bhubaneswar, Odisha",12,8.83,8.43,9.22,8.9,9.75,95,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Satisfactory,Neutral
+2024/03/02 10:07:29 am GMT+5:30,21cse495,Female,20,"Salipur, cuttack ",12,8.3,9.04,8.96,8.5,9,97,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Good,Happy
+2024/03/02 10:47:53 am GMT+5:30,21CSE566,Male,21,"Pallahara,Angul,Odisha",8,9.1,8.7,8.3,7.9,8.5,85,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Excellent,Neutral
+2024/03/02 11:49:52 am GMT+5:30,21CSEDS029,Male,21,"Kinjirkela, Sundargarh, Odisha",12,8,8.56,7.8,8.1,8.48,96,0,NPTEL Courses;Any Certification Course,Good,Happy
+2024/03/02 11:51:26 am GMT+5:30,21cseds020,Female,20,Jeypore ,6,7.8,7.5,7.4,7.85,8.5,80,0,NPTEL Courses,Good,Happy
+2024/03/02 11:51:34 am GMT+5:30,21CSEDS043 ,Female,20,"Rourkela,Sundergarh,Odisha",12,7.8,8.4,6.9,7.95,8.5,97,0,NPTEL Courses;NSS;Any Certification Course,Excellent,Glad
+2024/03/02 11:51:37 am GMT+5:30,21CSEDS002,Female,21,"Sector -18,D/26, Rourkela, Sundargarh,Odisha ",6,7.8,7.6,7.4,7,7.4,81,0,NPTEL Courses,Good,Happy
+2024/03/02 11:51:56 am GMT+5:30,21CSEDS039,Male,20,"At/PO- Kalimela, Malkangiri, Odisha",12,6,6.2,6.5,6.5,6.7,84,0,Any Certification Course,Good,Neutral
+2024/03/02 11:52:18 am GMT+5:30,21CSE438,Male,20,"Titlagarh, Balangir, Odisha ",16,8.26,8.34,8.6,8.6,8.24,82,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS;Any Certification Course;OB",Excellent,Neutral
+2024/03/02 11:53:47 am GMT+5:30,21CSEDS062,Male,21,Puri,10,,,6.5,6.5,,80.12,0,Any Certification Course,Satisfactory,Sad
+2024/03/02 11:53:57 am GMT+5:30,21CSEDS004,Male,22,"Jaykaypur ND 12/6 , Rayagada, Odisha",14,6.5,6.7,6.8,6.75,6.85,80,2,NPTEL Courses;Any Certification Course,Good,Neutral
+2024/03/02 11:56:05 am GMT+5:30,21cseds008,Female,20,"Patna,Bihar",11,8.87,8.89,8.57,8.46,8.33,94,0,NPTEL Courses;Any Certification Course,Good,Neutral
+2024/03/02 11:57:48 am GMT+5:30,21CSEDS022,Male,22,"Bonaigarh, sundargarh, odisha",10,6.5,7.1,7.5,7.6,7,80,0,Any Certification Course,Good,Neutral
+2024/03/02 11:58:08 am GMT+5:30,21CSEDS040,Male,21,"Jajpur town, odisha",10,6.9,6.5,6.7,6.3,7.5,81,0,Any Certification Course,Good,Neutral
+2024/03/02 12:00:35 pm GMT+5:30,21cseds021,Female,20,"Jeypore,koraput,odisha",14,7.6,8,7.6,8.03,8.1,89,0,NPTEL Courses;Any Certification Course,Excellent,Neutral
+2024/03/02 12:13:01 pm GMT+5:30,21CSE609,Male,20,"Rourkela, Sundergarh,Odisha ",14,6.8,6.7,6.25,6.36,7.5,78,2,,Excellent,Sad
+2024/03/02 12:44:15 pm GMT+5:30,21CSE313,Male,21,B/262 Sector-21 Nayabazar Rourkela odisha,15,6.9,6.7,6.6,6.8,6.8,85,0,NPTEL Courses;Any Certification Course,Good,Neutral
+2024/03/02 12:47:21 pm GMT+5:30,22cse206,Female,19,"Jamshedpur, East Singhbhum, jharkhand ",10,8.4,8.6,,,,95,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);",Satisfactory,Neutral
+2024/03/02 1:07:40 pm GMT+5:30,23ECE004,Female,19,"Jharsuguda,Odisha ",10,8.82,,,,,94,0,Any Certification Course,Satisfactory,Neutral
+2024/03/02 1:07:58 pm GMT+5:30,23ECE041,Female,18,"Rourkela, Sundargarh, Odisha",10,8.68,,,,,95,0,,Satisfactory,Neutral
+2024/03/02 1:09:53 pm GMT+5:30,23ECE016,Male,18,"Balangir town , balangir,odisha ",8,7.39,8.5,9,8.5,8.5,80.31,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Cricket ",Good,Neutral
+2024/03/02 1:51:11 pm GMT+5:30,21CSE633,Female,20,"Gunupur, Rayagada, Odisha",11,9.04,9.26,9.26,9.2,9.29,86.35,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Good,Neutral
+2024/03/02 2:17:05 pm GMT+5:30,21cse215,Male,21,"Kumuti Street, Near old bus stand, Gunupur, Rayagada, Odisha-765022",17,4.3,7.61,6.43,6.08,6.53,90,4,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Good,Neutral
+2024/03/02 2:19:27 pm GMT+5:30,21cseds028.uttamgouda@giet.edu,Male,19,"Belapunji, ganjam, odisha",10,6.52,6.98,7.22,7.4,7.5,86,0,NPTEL Courses,Good,Neutral
+2024/03/02 3:07:39 pm GMT+5:30,21CSE046,Male,22,"Dalikela ,West Singhbhum, Jharkhand ",12,7.2,7,7.3,6.8,7.1,60,0,,Good,Neutral
+2024/03/02 7:18:04 pm GMT+5:30,21cseds030,Male,21,"Berhampur, Ganjam, Odisha",0,7.26,9,8.52,8.75,8.7,86,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Good,Neutral
+2024/03/03 12:43:38 am GMT+5:30,21CSE689,Male,23,Rourkela,10,,,7.5,7.8,8.11,91,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Excellent,Glad
+2024/03/03 12:29:54 pm GMT+5:30,21CSE264 ,Male,20,"Malkangiri, Malkangiri, Odisha ",14,7.35,7,7.35,8.15,9.26,86,0,NPTEL Courses,Good,Happy
+2024/03/03 1:34:12 pm GMT+5:30,21CSE526,Male,20,"Maharana sahi,G.udayagiri, kandhamal,odisha",10,5.39,6.24,6.36,6.54,6.69,82,1,NPTEL Courses;Any Certification Course,Excellent,Happy
+2024/03/03 7:34:26 pm GMT+5:30,22CSE198,Male,19,"Bhadrak, Bhadrak, Odisha",8,8.68,8.75,8.4,8.2,8.5,82,0,NPTEL Courses;Sports and games ,Satisfactory,Neutral
+2024/03/04 8:34:52 am GMT+5:30,21CSEDS024,Male,21,"Banpur,Khordha, Odisha",10,7.1,7.6,6.2,6.7,7.8,85,0,Any Certification Course,Satisfactory,Neutral
+2024/03/04 9:18:40 am GMT+5:30,20cse256,Male,23,"Balipadar,ganjam,odisha",4,8.56,9.6,9,8.9,8.67,81,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Satisfactory,Sad
+2024/03/04 10:07:25 am GMT+5:30,20CSE130,Male,23,"Brajrajnagar, Jharsuguda, Odisha ",12,7.59,8.57,8.37,8.39,8.25,82,0,Any Certification Course;OB,Excellent,Glad
+2024/03/04 10:18:00 am GMT+5:30,21BT044 ,Male,19,Gopalganj bihar,4,6.65,7.5,7.4,6.5,7.5,80,3,NPTEL Courses,Excellent,Happy
+2024/03/04 2:12:57 pm GMT+5:30,20CSE280,Male,21,"Gunupur, Rayagada, odisha ",4,8.1,9.5,7.4,7.5,7.8,70,1,NPTEL Courses,Excellent,Neutral
+2024/03/04 5:14:45 pm GMT+5:30,22CSE325,Male,19,"jaleswar, Balasore, Odisha",11,8.3,8.09,,,,85,2,NPTEL Courses,Good,Happy
+2024/03/04 5:57:34 pm GMT+5:30,22cse039,Male,20,"Kinjirkela,sundargarh,odisha",7,7.3,6.8,6.9,7.3,8.1,81,0,NPTEL Courses,Bad,Sad
+2024/03/05 10:35:35 am GMT+5:30,22CSE072,Male,19,"LAXMINAGAR JAJPUR ROAD, JAJPUR, ODISHA",9,6.9,,,,,87,3,NPTEL Courses;GATE,Good,Neutral
+2024/03/05 11:37:06 am GMT+5:30,22CSE066,Male,19,"Jaleswar, balasore, odisha ",12,7.3,8.5,8.8,,,88.92,0,NPTEL Courses,Satisfactory,Neutral
+2024/03/06 1:03:13 am GMT+5:30,22CSE126,Male,18,"Jamshedpur, East Singhbhum, Jharkhand ",12,7.5,7.6,,,8.5,90,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS;Any Certification Course",Bad,Neutral
+2024/03/06 8:54:11 am GMT+5:30,21cse006,Male,19,"Sekhar Nagar, Gunupur ",12,6.7,7.1,7.2,7.56,8.43,83,0,NPTEL Courses;Any Certification Course,Good,Sad
+2024/03/20 10:33:13 pm GMT+5:30,,Male,20,Jharkhand ,12,8.14,8.23,7.89,7.49,7.65,85,0,NPTEL Courses;NSS,Excellent,Angry
+2024/03/20 10:34:45 pm GMT+5:30,,Female,21,Odisha ,11,7.89,7.97,8.56,8.79,7.5,80,2,Any Certification Course;OB,Satisfactory,Sad
+2024/03/20 11:14:22 pm GMT+5:30,,Male,22,Bihar,13,7.38,8.26,7.63,8.21,8.23,87,0,NPTEL Courses;Any Certification Course,Bad,Neutral
+2024/03/20 11:16:16 pm GMT+5:30,,Male,23,"Gunupur, Odisha",10,7.23,7.53,7.51,6.36,8.13,86,1,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Good,Sad
+2024/03/20 11:18:05 pm GMT+5:30,,Female,25,"Rayagada, Odisha",9,7.72,7.77,7.86,8.21,8.56,89,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Good,Glad
+2024/03/20 11:19:45 pm GMT+5:30,,Female,25,"Patna, Bihar",16,8.63,8.69,8.73,8.79,8.93,75,2,NPTEL Courses;OB,Satisfactory,Neutral
+2024/03/20 11:21:39 pm GMT+5:30,,Male,26,"Muzaffarpur, Bihar",15,8.69,8.46,8.76,7.74,7.23,90,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Satisfactory,Neutral
+2024/03/20 11:23:04 pm GMT+5:30,,Male,19,Odisha,12,8.93,7.56,8.36,6.35,8.12,95,1,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Good,Neutral
+2024/03/20 11:30:24 pm GMT+5:30,,Female,21,Sundargarh ,15,7.8,8,"7.,8",8.1,8.15,93,0,NPTEL Courses,Excellent,Glad
+2024/03/20 11:31:49 pm GMT+5:30,,Female,20,"Bhubaneswar, khordha, odisha",15,7.8,8.3,7.8,8,8.1,94,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Good,Happy
+2024/03/20 11:39:44 pm GMT+5:30,21cseaml12,Male,19,"Odisha,rayagada",7,8,9,5.2,7.44,7.4,78,4,NPTEL Courses,Satisfactory,Sad
+2024/03/20 11:40:46 pm GMT+5:30,23cseds064,Male,19,Rayagada,8,7.8,7,7,6.9,7,85,6,NPTEL Courses,Bad,Angry
+2024/03/20 11:41:48 pm GMT+5:30,23cseds061,Male,20,Gunupur ,8,6.7,6.7,6,7,6,78,7,Any Certification Course,Bad,Angry
+2024/03/20 11:42:47 pm GMT+5:30,21cse657,Female,21,Gajapati ,8,5,7,8,7,8,89,6,NPTEL Courses,Bad,Neutral
+2024/03/20 11:43:49 pm GMT+5:30,23cseds65,Female,23,Raipur,7,7,8,9,9,7,69,3,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Good,Angry
+2024/03/21 8:05:08 am GMT+5:30,21csebt123,Female,23,Rajam,7,7,7,6,7,8,86,2,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Satisfactory,Neutral
+2024/03/21 8:06:03 am GMT+5:30,21cseaml123,Male,20,Vizag,6,6,7,8,9,8,85,1,Any Certification Course,Satisfactory,Sad
+2024/03/21 8:07:00 am GMT+5:30,21cse124,Male,21,Paralakhamundi ,8,6,7,8,8,8,67,1,NSS,Satisfactory,Sad
+2024/03/21 10:17:26 am GMT+5:30,21cseaml12 ,Male,23,Raipur,9,6,8,7.5,8,7.8,76,0,Any Certification Course,Satisfactory,Angry
+2024/03/21 10:18:15 am GMT+5:30,,Female,21,Rajam,7,6,6,7,8,8,67,2,NSS,Satisfactory,Angry
+2024/03/21 10:18:59 am GMT+5:30,,Male,23,Gunupur ,7,7,6,8,7,7,87,2,Any Certification Course,Satisfactory,Sad
+2024/03/21 10:19:46 am GMT+5:30,,Female,20,Rayagada,8,7,8,9,9,8,78,3,NSS,Satisfactory,Angry
+2024/03/21 10:20:45 am GMT+5:30,,Male,23,Rayagada ,8,7,7,8,8,5,76,1,NPTEL Courses,Bad,Sad
+2024/03/21 10:21:35 am GMT+5:30,,Female,21,Bihar,8,7.5,7.8,8,7.8,7,79,0,NPTEL Courses,Bad,Angry
+2024/03/21 10:22:35 am GMT+5:30,,Female,24,Palasa,8,6.8,8.3,8,7.8,8,67,2,Any Certification Course,Satisfactory,Angry
+2024/03/21 10:23:59 am GMT+5:30,,Female,21,Rayagada,8,8,9,8,8,8,84,1,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Satisfactory,Sad
+2024/03/21 10:24:56 am GMT+5:30,,Female,21,Labanyagada,8,8,8,8,7,7,87,0,NSS,Bad,Angry
+2024/03/21 7:32:13 pm GMT+5:30,200,Male,20,"Balangir, Odisha",14,6.9,7.2,7,6.9,7.4,88,1,NPTEL Courses;NSS;Any Certification Course,Good,Neutral
+2024/03/21 7:34:39 pm GMT+5:30,201,Female,19,"Damonjodi, Koraput, Odisha ",10,5.9,5.8,6.1,6.4,7,75,4,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS;Any Certification Course;OB",Satisfactory,Sad
+2024/03/21 7:37:01 pm GMT+5:30,202,Male,22,"Patna, Bihar",12,5.4,5.6,5.8,5.6,6.1,68,6,NCC;NSS,Bad,Neutral
+2024/03/21 7:38:37 pm GMT+5:30,203,Female,21,"Kinjrikela, Sundergarh",14,7,7.3,5.6,6.4,8.3,88,2,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Good,Happy
+2024/03/21 7:41:14 pm GMT+5:30,204,Female,23,"Malkingiri, Odisha",10,6,7.2,6.8,6.4,5.4,72,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS;OB",Satisfactory,Neutral
+2024/03/21 7:43:07 pm GMT+5:30,205,Male,20,"Paralakhemundi, Gajapati, Odisha",18,7.2,7.4,6.8,6.8,7,98,0,Any Certification Course,Bad,Angry
+2024/03/21 7:44:27 pm GMT+5:30,206,Female,23,"Cuttack, Odisha",12,9.8,9.7,8.9,9.2,9.3,98,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course;OB",Excellent,Glad
+2024/03/21 7:48:13 pm GMT+5:30,207,Male,21,"Bhubaneshwar, Khorda, Odisha",10,6.6,7.4,7.3,8.2,8.8,88,0,Any Certification Course;OB,Satisfactory,Sad
+2024/03/21 7:50:27 pm GMT+5:30,208,Female,20,"Jeypore, Koraput, Odisha",12,5.6,6.7,7.4,6.7,6.8,88,3,NSS,Good,Neutral
+2024/03/21 7:52:17 pm GMT+5:30,209,Female,23,"Rourkela, Odisha",12,7.8,7.4,6.7,7.2,7.7,80,4,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Satisfactory,Happy
+2024/03/21 7:54:33 pm GMT+5:30,210,Male,20,"Polsora, Ganjam",14,7.5,7.8,7.5,7.8,8.2,87,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS;OB",Bad,Angry
+2024/03/21 7:56:20 pm GMT+5:30,211,Male,20,"Phulbani, Kandhamal, Odisha",12,5.7,5.7,6.4,6.4,6.8,83,1,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Excellent,Glad
+2024/03/21 7:59:34 pm GMT+5:30,212,Male,23,"Nuapada, Odisha",10,6,6,6.6,6.6,6.8,78,1,NSS,Bad,Sad
+2024/03/21 8:02:30 pm GMT+5:30,213,Male,21,"Vishakapatnam, Andhra Pradesh",10,7.4,7.4,7.4,7.4,7.4,78,0,NCC;Any Certification Course;OB,Satisfactory,Happy
+2024/03/21 8:04:51 pm GMT+5:30,214,Female,21,"Sambalpur, Odisha",10,7.4,7.4,7.8,7.8,7.8,76,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Good,Neutral
+2024/03/21 8:07:17 pm GMT+5:30,215,Female,20,"Kota, Rajastan",15,9.8,9.8,9.7,9.7,9.6,77,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC;Any Certification Course;OB",Good,Neutral
+2024/03/21 8:09:34 pm GMT+5:30,216,Male,21,"Kalahandi, Odisha",12,7.7,7.7,7.7,7.7,7.7,86,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Good,Neutral
+2024/03/21 8:10:50 pm GMT+5:30,217,Male,21,"Mayurbhanj, Odisha",12,7.6,7.6,7.6,7.6,7.6,87,1,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Good,Neutral
+2024/03/21 8:12:41 pm GMT+5:30,218,Male,20,"Omerkote, Narangpur, Odisha",12,6.5,6.3,6.2,7.3,7.2,79,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Excellent,Neutral
+2024/03/21 8:14:20 pm GMT+5:30,219,Male,23,"Berhampur, Ganjam, Odisha",12,6.5,6.5,6.5,6.5,6.5,78,0,NPTEL Courses;Any Certification Course,Good,Neutral
+2024/03/21 8:15:49 pm GMT+5:30,220,Male,21,"Berhampur, Ganjam, Odisha",13,6.5,6.7,6.9,7.1,7.3,89,0,Any Certification Course;OB,Excellent,Glad
+2024/03/21 8:19:26 pm GMT+5:30,221,Male,23,"Bhadrak, Odisha",14,7.6,7.6,6.6,6.7,7.2,78,0,NPTEL Courses;Any Certification Course,Satisfactory,Neutral
+2024/03/21 8:22:30 pm GMT+5:30,222,Female,21,"Vizayanagaram, Andhra Pradesh",13,8.9,8.9,8.9,8.9,8.9,87,3,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC;OB",Satisfactory,Angry
+2024/03/21 8:24:45 pm GMT+5:30,223,Male,21,"Puri, Odisha",12,5.6,5.6,5.6,5.6,5.6,66,6,Any Certification Course,Bad,Angry
+2024/03/21 8:27:12 pm GMT+5:30,224,Female,21,"Hyderabad, Telangana",9,9.8,7.8,8.5,8.7,7.9,89,0,NPTEL Courses,Excellent,Glad
+2024/03/21 8:29:10 pm GMT+5:30,225,Male,23,"Bangalore, Karnataka",10,6.5,7.3,8.5,8.6,9.2,96,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS",Excellent,Glad
+2024/03/21 8:30:33 pm GMT+5:30,226,Female,20,"Tamilnadu, Chennai",7,7.2,5.3,6.9,8.1,7.9,75,3,NCC;Any Certification Course,Good,Sad
+2024/03/21 8:32:00 pm GMT+5:30,227,Female,23,"Pune, Maharastra",9,5.3,5.3,5.3,5.3,5.6,65,4,NSS,Bad,Angry
+2024/03/21 8:34:20 pm GMT+5:30,228,Male,23,"Kolkata, West Bengal",9,9.3,9.3,9.4,9.5,9.2,65,4,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Satisfactory,Neutral
+2024/03/21 8:36:06 pm GMT+5:30,229,Male,21,"Berhampur, Ganjam, Odisha",12,5.3,5.3,5.6,5.6,6.5,77,2,Any Certification Course;OB,Good,Sad
+2024/03/21 8:37:24 pm GMT+5:30,230,Male,20,"Rayagada, Odisha",14,5.2,5.3,5.3,5.3,5.6,67,4,NSS,Satisfactory,Sad
+2024/03/21 8:41:16 pm GMT+5:30,231,Male,21,"Lanjigarh, Kalahandi, Odisha",12,7.8,7.9,7.8,7.9,8.5,89,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Excellent,Glad
+2024/03/21 8:45:12 pm GMT+5:30,232,Male,23,"Patnagarh, Balangir, Odisha",13,7.2,7.2,7.3,7.3,7.4,78,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Excellent,Glad
+2024/03/21 8:47:00 pm GMT+5:30,233,Male,21,"Harishankar, Balangir, Odisha",13,7.6,7.6,9.3,9.3,5.6,98,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS",Satisfactory,Neutral
+2024/03/21 11:02:27 pm GMT+5:30,234,Male,21,"Bhabanipatna, Kalahandi, Odisha",12,7.2,7.2,7.2,7.2,7.2,84,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Excellent,Glad
+2024/03/21 11:06:01 pm GMT+5:30,235,Male,22,"Uri, Jammu & Kashmir",12,8.4,7.8,8.4,7.8,8.4,85,0,NPTEL Courses;Any Certification Course;OB,Good,Happy
+2024/03/21 11:08:46 pm GMT+5:30,236,Female,23,"Ludhiana, Punjab",10,6.6,7.8,7.8,5.9,9.4,91,1,NCC,Good,Sad
+2024/03/21 11:10:25 pm GMT+5:30,237,Female,21,"Pune, Maharastra",12,9.9,9.8,9.7,9.6,9.5,88,0,NPTEL Courses;Any Certification Course,Satisfactory,Neutral
+2024/03/21 11:15:14 pm GMT+5:30,238,Female,21,"Gunupur, Rayagada, Odisha",12,9.8,9,9,9,9.6,99,0,NPTEL Courses,Good,Neutral
+2024/03/21 11:16:58 pm GMT+5:30,239,Female,22,"Chatikona, Rayagada, Odisha",12,5.6,5.7,5.8,5.9,6,85,6,,Bad,Angry
+2024/03/21 11:19:23 pm GMT+5:30,240,Female,23,"Muniguda, Rayagada, Odisha",10,5.7,5.9,6.3,6.5,7.2,88,0,Any Certification Course,Good,Happy
+2024/03/21 11:21:19 pm GMT+5:30,241,Male,21,"JK Pur, Rayagada, Odisha",10,6.6,6.8,7,7.2,8,87,0,Any Certification Course;OB,Bad,Angry
+2024/03/21 11:23:47 pm GMT+5:30,242,Female,20,"Kankubadi, Bissamcuttack, Rayagada, Odisha",13,6,6,7,7.7,7.8,78,1,NSS;OB,Satisfactory,Sad
+2024/03/21 11:25:26 pm GMT+5:30,243,Female,21,"Bolangir, Odisha",12,7.6,6.5,7.6,8.6,5.6,78,0,Any Certification Course,Satisfactory,Neutral
+2024/03/21 11:28:47 pm GMT+5:30,244,Female,21,"Pipili, Puri, Odisha",14,7.8,8,8.6,6.7,6.5,73,1,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course;OB",Excellent,Glad
+2024/03/21 11:33:15 pm GMT+5:30,245,Male,23,"Kotugarh, Kandhamal, Odisha",12,7.8,C,7.8,7.8,7.8,79,1,NPTEL Courses,Satisfactory,Sad
+2024/03/21 11:35:42 pm GMT+5:30,246,Male,21,"Lanjigarh, Kalahandi, Odisha",9,6,7,8,8.4,8.5,89,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Good,Happy
+2024/03/21 11:38:22 pm GMT+5:30,247,Male,22,"Papdahandi, Nabrangpur, Odisha",12,6.7,6.7,6.8,7,7.5,88,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Satisfactory,Sad
+2024/03/21 11:40:57 pm GMT+5:30,248,Male,21,"Malkingiri, Odisha",12,5.6,6.1,6.4,5.9,7.6,94,0,Any Certification Course,Bad,Neutral
+2024/03/21 11:44:25 pm GMT+5:30,249,Male,23,"Pulsora, Ganjam, Odisha",9,9.8,9.8,9.8,9.8,9.8,94,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course;OB",Excellent,Glad
+2024/03/21 11:47:55 pm GMT+5:30,250,Male,21,"Kurli, Chatikona, Bissamcuttack, Rayagada, Odisha",12,5.6,6.5,6.3,6.3,5.4,87,4,NSS;OB,Bad,Angry
+2024/03/22 12:47:34 pm GMT+5:30,,Male,20,"Panposh, Sundargarh, Odisha",16,8,8.7,7.9,8.1,8.6,95.2,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Satisfactory,Happy
+2024/03/22 8:52:01 pm GMT+5:30,21cse001,Male,21,rajam,9,7,7,8,7,8,78,0,Any Certification Course,Satisfactory,Neutral
+2024/03/22 8:53:03 pm GMT+5:30,21cseds002,Female,21,vizag,8,8,7,7,9,7,67,2,OB,Satisfactory,Sad
+2024/03/22 8:54:18 pm GMT+5:30,21cseds003,Female,21,kotiyada,9,8,7,7.6,7.9,7,69,1,NPTEL Courses,Satisfactory,Sad
+2024/03/22 8:55:16 pm GMT+5:30,21cse004,Female,22,gunupur,8,6,7,8,8.5,8,78,1,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Good,Angry
+2024/03/22 8:56:32 pm GMT+5:30,21cse005,Female,23,gunupur,7,7,8,9,7.7,8,79,0,NSS,Satisfactory,Angry
+2024/03/22 8:57:35 pm GMT+5:30,21cse007,Male,23,raipur,8,7,7,7,7.5,6.8,78,3,NSS,Good,Angry
+2024/03/22 9:01:10 pm GMT+5:30,21cse009,Female,21,pune,8,7,8,6,6.8,7,67,2,NSS,Bad,Angry
+2024/03/22 9:02:08 pm GMT+5:30,21cse009,Female,23,raigard,7,6.9,7,8,7,6.9,78,2,Any Certification Course,Satisfactory,Sad
+2024/03/22 9:03:43 pm GMT+5:30,21cse012,Female,21,himachal,8,5.9,8,6.7,7.7,8,59,2,NSS,Satisfactory,Angry
+2024/03/22 9:06:15 pm GMT+5:30,21cse011,Female,24,hydrabad,8,8,6,8,8,7,67,2,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Satisfactory,Angry
+2024/03/22 9:07:13 pm GMT+5:30,21cse013,Female,23,rajastan,9,7,8,6.5,7,7,79,1,Any Certification Course,Satisfactory,Angry
+2024/03/22 9:08:24 pm GMT+5:30,21cse014,Female,22,naloor,8,7.8,6.7,8.2,8,9,67,2,NSS,Bad,Angry
+2024/03/22 9:09:41 pm GMT+5:30,21cse015,Female,22,jammu,8,6,7,8,7.8,8,89,2,NCC,Satisfactory,Neutral
+2024/03/23 8:22:45 am GMT+5:30,21cse014,Female,21,Deouper,8,8,7,6.9,7,7,67,1,Any Certification Course,Satisfactory,Angry
+2024/03/23 8:24:01 am GMT+5:30,21cse015,Female,21,Labanyagada ,9,7,8,7.5,7,7,78,2,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Satisfactory,Angry
+2024/03/23 8:26:25 am GMT+5:30,21cse015,Female,22,Goipple,9,7,7,8,7,8,78,1,OB,Satisfactory,Sad
+2024/03/23 8:27:16 am GMT+5:30,21cse016,Male,21,Pune,8,7,7,6.9,7,8,76,2,OB,Satisfactory,Angry
+2024/03/23 8:28:15 am GMT+5:30,21cse017,Female,22,Raipur,9,7,8,7,6.9,7.9,87,1,Any Certification Course,Satisfactory,Sad
+2024/03/23 1:24:04 pm GMT+5:30,,Female,21,raipur,8,7,7,7,6.99,8,67,4,Any Certification Course,Satisfactory,Sad
+2024/03/23 1:25:08 pm GMT+5:30,,Female,21,delhi,8,7,8,9,7,7,76,2,NSS,Bad,Angry
+2024/03/23 1:28:28 pm GMT+5:30,21cse016,Female,23,delhi,8,8,6,7,8,8,87,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Satisfactory,Happy
+2024/03/23 1:30:28 pm GMT+5:30,21cseds012,Male,22,gumuda,8,8,6,9,7,7,67,3,Any Certification Course,Satisfactory,Angry
+2024/03/23 1:31:30 pm GMT+5:30,21cse061,Female,23,rajamandary,9,8,9,7,9,8,78,2,NSS,Satisfactory,Angry
+2024/03/23 1:33:08 pm GMT+5:30,21cs3062,Male,22,vijaynager,10,8,9,9,9,9,87,0,Any Certification Course,Satisfactory,Neutral
+2024/03/23 1:34:17 pm GMT+5:30,21cseds067,Female,22,rajamandary,9,7,7,9,9,8,78,0,Any Certification Course,Satisfactory,Sad
+2024/03/23 1:40:28 pm GMT+5:30,21cse082,Female,22,goa,9,7,7,8,9,7,68.7,2,NSS,Satisfactory,Angry
+2024/03/23 1:41:57 pm GMT+5:30,,Male,22,puri,8,7,8,7,7,7,67,2,OB,Satisfactory,Angry
+2024/03/23 1:43:42 pm GMT+5:30,21cse016,Female,22,cuttack,8,6,8,6,8,8,74,3,NSS,Satisfactory,Angry
+2024/03/24 9:52:49 am GMT+5:30,,Female,21,Odisha,15,8.32,7.46,8.48,7.23,8.14,80,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Satisfactory,Neutral
+2024/03/24 9:55:28 am GMT+5:30,,Male,22,"Balasore, Odisha",17,7.24,8.21,7.15,7.23,7.49,85,1,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Good,Sad
+2024/03/24 9:57:50 am GMT+5:30,,Female,24,"Balangir, Odisha",17,7.45,7.45,7.61,7.51,8.24,84,2,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Excellent,Angry
+2024/03/24 9:59:32 am GMT+5:30,,Male,20,Bhadrak,13,6.5,8.36,8.96,9.1,7.23,81,1,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Good,Happy
+2024/03/24 10:01:02 am GMT+5:30,,Female,19,"Cuttack, Odisha",17,6.32,7.56,7.96,8.21,8.19,82,1,NCC;OB,Satisfactory,Sad
+2024/03/24 10:02:36 am GMT+5:30,,Male,21,"Deogarh, Odisha",15,7.77,7.89,8.69,7.26,7.86,90,0,NCC;Any Certification Course,Satisfactory,Sad
+2024/03/24 10:05:06 am GMT+5:30,,Male,24,"Ganjam, Odisha",13,7.53,8.23,7.36,7,7.3,75,0,NCC;NSS,Satisfactory,Sad
+2024/03/24 10:07:26 am GMT+5:30,,Male,20,"Jagatsinghpur, Odisha",15,7.32,7.25,7.89,8.23,8.96,86,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Satisfactory,Neutral
+2024/03/24 10:09:06 am GMT+5:30,,Female,22,"Kalahandi, Odisha",16,7.69,7.31,8.12,8.65,8.88,95,0,NCC,Excellent,Happy
+2024/03/24 10:10:36 am GMT+5:30,,Female,22,"Kandhamal, Odisha",14,7.23,8.25,8.17,8.63,8.21,92,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Satisfactory,Neutral
+2024/03/24 10:14:58 am GMT+5:30,,Male,21,"Kendrapara, Odisha",18,7.44,7.49,8.36,9.11,8.36,89,0,NSS;Any Certification Course,Satisfactory,Angry
+2024/03/24 10:16:28 am GMT+5:30,,Male,21,"Kendujhar, Odisha",17,7.89,7.98,8.12,8.23,8.32,91,0,NPTEL Courses;OB,Good,Happy
+2024/03/24 10:17:59 am GMT+5:30,,Male,25,"Khordha, Odisha",18,7.36,7.63,7.25,7.85,8.17,93,0,NCC;OB,Bad,Sad
+2024/03/24 10:20:18 am GMT+5:30,,Female,26,"Koraput, Odisha",18,7.24,7.42,7.58,7.85,8.23,82,1,NPTEL Courses,Excellent,Sad
+2024/03/24 10:23:34 am GMT+5:30,,Male,22,"Malkangiri, Odisha",18,7.18,7.79,7.86,8.46,8.88,81,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Good,Happy
+2024/03/24 10:27:28 am GMT+5:30,,Male,21,"Bhagalpur, Odisha",16,7.21,8.23,6.5,7,7.55,79,1,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Excellent,Happy
+2024/03/24 10:30:47 am GMT+5:30,,Male,21,"Gunupur, Odisha",12,7.15,7.85,7.58,8.24,7.47,91,0,NCC;NSS,Good,Happy
+2024/03/24 10:32:27 am GMT+5:30,,Female,21,"Darbhanga, Bihar",18,8.25,7.24,7.21,7.86,8.25,80,0,NPTEL Courses;Any Certification Course,Good,Neutral
+2024/03/24 10:35:56 am GMT+5:30,,Female,23,"Champaran, Odisha",15,7.56,8.35,8.12,8.24,7.24,80.23,1,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Excellent,Glad
+2024/03/24 10:37:56 am GMT+5:30,,Male,20,"Siwan, Bihar",16,8.24,7.24,7.45,8.47,8.17,69,0,NSS;Any Certification Course,Satisfactory,Neutral
+2024/03/24 10:40:19 am GMT+5:30,,Female,70,"Jamui, Bihar",14,7.23,8.21,8.54,8.75,8.96,72,0,NPTEL Courses;NSS,Good,Neutral
+2024/03/24 10:41:57 am GMT+5:30,,Female,23,"Jehanabad, Bihar",15,7.86,7.72,7.73,7.12,7.45,73,2,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Satisfactory,Neutral
+2024/03/24 10:43:37 am GMT+5:30,,Male,20,"Khagaria, Bihar",12,7.24,7.41,7.52,7.89,8.96,74,0,NPTEL Courses,Satisfactory,Sad
+2024/03/24 10:45:50 am GMT+5:30,,Male,23,"Gaya, Bihar",13,8.23,8.21,7.45,7.86,7.45,86,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Good,Happy
+2024/03/24 10:48:09 am GMT+5:30,,Female,25,"Motihari, Bihar",11,7.56,8.23,9.1,8.24,7.12,75,6,NPTEL Courses;Any Certification Course,Good,Neutral
+2024/03/24 10:49:50 am GMT+5:30,,Male,22,"Bhagalpur, Bihar",15,7.25,8.55,8.44,8.22,8.11,76,2,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS",Bad,Angry
+2024/03/24 10:52:26 am GMT+5:30,,Female,21,"Begusarai, Odisha",19,7.82,7.25,7.47,7.66,7.45,77,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);OB",Satisfactory,Neutral
+2024/03/24 10:54:24 am GMT+5:30,,Female,25,"Madhepura, Bihar",9,7.36,6.96,7.56,8.65,8.15,78,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Good,Sad
+2024/03/24 10:55:55 am GMT+5:30,,Female,21,"Arwal, Bihar",10,7.54,7.25,7.65,7.45,7.48,79,0,NPTEL Courses;Any Certification Course,Bad,Neutral
+2024/03/24 10:52:49 pm GMT+5:30,20cse501,Male,18,"Bhubaneswar, khurda,Odisha",12,6.66,6.8,6.5,6.91,7.04,80.62,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Good,Neutral
+2024/03/24 11:11:15 pm GMT+5:30,20cse405,Female,23,"Bhubaneswar, Khurda, Odisha",10,6.5,6.4,6.1,6.5,7,78,2,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Good,Happy
+2024/03/24 11:13:18 pm GMT+5:30,21cse403,Male,22,"Baleswar,Odisha",11,8.3,7.8,8.1,8.22,8.3,85,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS;Any Certification Course;OB",Good,Glad
+2024/03/24 11:20:32 pm GMT+5:30,21cse230,Male,21,"Bhadrak,Odisha",13,7.8,7.5,7.6,7.3,7.4,78,0,NPTEL Courses;NSS,Excellent,Glad
+2024/03/24 11:22:38 pm GMT+5:30,21cse560,Female,20,"Cuttack , Odisha ",11,6.7,6.9,7.4,7.6,7.7,80,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS",Excellent,Glad
+2024/03/24 11:24:52 pm GMT+5:30,21cse238,Female,22,"Bhadrak, Odisha",10,7.01,6.94,6.61,7.2,7.4,86,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC;Any Certification Course",Excellent,Glad
+2024/03/24 11:27:40 pm GMT+5:30,21cse021,Male,23,"Anugul, Odisha",8,7.51,6.9,7.1,7,7.6,85,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course;OB",Excellent,Glad
+2024/03/24 11:29:36 pm GMT+5:30,21cse606,Male,20,"Cuttack, Odisha",11,6.4,6.61,7,7.1,7.3,79,2,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Excellent,Glad
+2024/03/24 11:31:24 pm GMT+5:30,21cse536,Male,21,"Bhadrak, Ofisha",12,7.8,7.9,7.43,7.77,8.5,92,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course;OB",Satisfactory,Neutral
+2024/03/25 6:56:30 am GMT+5:30,21cse545,Male,23,"Jajpurtown, Jajpur, Odisha ",13,8.5,8.32,8.22,8.46,8.5,95,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course;OB",Good,Glad
+2024/03/25 6:57:59 am GMT+5:30,21cse623,Female,23,"Bhadrak, Odisha",11,7.8,8.1,7.92,8.23,8.5,90,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Excellent,Glad
+2024/03/25 7:00:06 am GMT+5:30,21cse302,Male,21,"Jagatsinghpur, Odisha",12,7.9,7.56,7.43,7.66,8,92,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Excellent,Glad
+2024/03/25 7:01:46 am GMT+5:30,21cse304,Male,21,"Bhadrak, Odisha",12,7.8,7.65,7.34,7.2,7.55,8,0,NPTEL Courses;NSS;Any Certification Course,Excellent,Glad
+2024/03/27 3:11:30 pm GMT+5:30,,Female,21,Rayagada,8,6.9,6.9,7,8,7,78,2,Any Certification Course,Satisfactory,Angry
+2024/03/27 3:12:51 pm GMT+5:30,,Female,21,Regada,9,8,8,6.9,8,8,78,2,Any Certification Course,Bad,Angry
+2024/03/27 3:13:47 pm GMT+5:30,,Female,23,Raipur,7,6.9,8.o,6.9,7,7.2,76,0,NSS,Bad,Angry
+2024/03/27 3:15:34 pm GMT+5:30,,Female,23,Deouper,8,6.9,6.9,7.4,7.7,8,89,1,Any Certification Course,Satisfactory,Angry
+2024/03/27 9:24:53 pm GMT+5:30,,Male,19,"Shahdara, Delhi",16,7.32,8.24,8.14,7.86,7.77,89,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Satisfactory,Neutral
+2024/03/27 9:27:00 pm GMT+5:30,,Male,20,"Central, Delhi",21,7. 45,7.14,8.21,7.12,7.77,77.25,2,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Good,Happy
+2024/03/27 9:28:50 pm GMT+5:30,,Female,21,"North, Delhi",15,8.24,7.24,7.65,7. 45,7.32,88,2,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Good,Neutral
+2024/03/27 9:32:49 pm GMT+5:30,,Female,25,"Ranchi, Jharkhand",18,7.25,8.45,8.74,7.65,7.32,96,0,NCC;Any Certification Course,Good,Neutral
+2024/03/27 9:35:08 pm GMT+5:30,,Male,24,"	Dhanbad, Jharkhand",20,7.35,7.45,7,7.63,7.98,86,1,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS",Excellent,Happy
+2024/03/27 9:36:40 pm GMT+5:30,,Female,23,"Bokaro, Jharkhand",17,7.23,7.32,7.56,7.78,8.17,67,0,NCC;NSS,Excellent,Happy
+2024/03/27 9:38:52 pm GMT+5:30,,Male,22,"	Chatra, Jharkhand",14,7.96,8.36,8.65,8.47,7.98,86,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Excellent,Happy
+2024/03/27 9:40:40 pm GMT+5:30,,Female,25,"	Jamtara, Jharkhand",78,7.52,8.32,9.2,7.5,7.65,78.12,0,NSS;Any Certification Course,Satisfactory,Neutral
+2024/03/27 9:42:23 pm GMT+5:30,,Male,23,"Jharkhand,	Lohardaga",16,8.12,7.12,7.86,8.23,7.36,82,1,NSS;Any Certification Course,Satisfactory,Sad
+2024/03/27 9:43:44 pm GMT+5:30,,Female,22,Tanali,9,8,8,7.8,8,8,78,1,NSS,Satisfactory,Sad
+2024/03/27 9:44:06 pm GMT+5:30,,Male,21,"Khunti, Jharkhand",16,7.25,8.24,8.96,7.45,8.45,74,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Excellent,Sad
+2024/03/27 9:44:47 pm GMT+5:30,21cse067,Female,21,Paralakhamundi ,9,8,8,7,7.8,8,89,1,Any Certification Course,Satisfactory,Sad
+2024/03/27 9:45:27 pm GMT+5:30,,Male,22,Koraput,8,7,7,8,9,8,89,1,Any Certification Course,Bad,Sad
+2024/03/27 9:46:15 pm GMT+5:30,,Female,22,Garabandha,8,8,7,8,8,8,78,1,OB,Satisfactory,Sad
+2024/03/27 9:46:29 pm GMT+5:30,,Female,26,"	Garhwa,Jharkhand",16,8.35,9.36,8.65,7.35,7.36,86,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS",Good,Neutral
+2024/03/27 9:47:03 pm GMT+5:30,,Male,22,Delhi,8,6,7,8,7,8,78,1,Any Certification Course,Satisfactory,Neutral
+2024/03/27 9:47:45 pm GMT+5:30,,Male,22,Chapara,9,8,7,7,7.8,7,87,1,NSS,Satisfactory,Sad
+2024/03/27 9:48:35 pm GMT+5:30,,Male,22,Koraput,8,8,7.9,8.9,8,7,89,1,NSS,Satisfactory,Sad
+2024/03/27 9:49:37 pm GMT+5:30,,Female,24,"Godda, Jharkhand",18,7.11,7.22,7.33,7.44,7.88,73,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);OB",Satisfactory,Sad
+2024/03/27 9:52:07 pm GMT+5:30,,Female,24,"Gumla,Jharkhand",11,7.99,8.11,8.22,8.33,8.99,76,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NCC",Good,Happy
+2024/03/27 9:53:59 pm GMT+5:30,,Male,25,"Pakur,Jharkhand",16,8.36,7.56,7.46,7.89,7.52,80,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS",Excellent,Happy
+2024/03/27 10:23:36 pm GMT+5:30,,Male,20,"Bhubaneswar, Khurda, Odisha",13,7.6,8.3,7.9,8,8.5,89,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course;OB",Excellent,Glad
+2024/03/27 10:24:43 pm GMT+5:30,,Male,23,"Bhadrak, Odisha",12,7.4,7.5,7.23,7.34,8,93,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Excellent,Glad
+2024/03/27 10:26:37 pm GMT+5:30,,Female,20,"Jajpur, Odisha",13,6.5,7,7.3,7.8,8,90,0,NPTEL Courses;NCC;Any Certification Course;OB,Excellent,Glad
+2024/03/27 10:27:49 pm GMT+5:30,,Female,20,"Bhadrak, Odisha",12,6.7,6.8,6.9,6.9,7.5,89,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course;OB",Excellent,Glad
+2024/03/27 10:29:12 pm GMT+5:30,,Female,21,"Anugul, Odisha",12,7.8,7.5,7.4,7.65,8,85,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);Any Certification Course",Excellent,Glad
+2024/03/27 10:30:43 pm GMT+5:30,,Female,20,"Bhadrak, Odisha",13,7.4,7.21,7.34,7.8,8,90,0,NPTEL Courses;NCC;Any Certification Course,Excellent,Glad
+2024/03/27 10:31:59 pm GMT+5:30,,Male,23,"Bhadrak, Odisha",12,7.8,7.5,7.5,8,8.1,81,0,NPTEL Courses;NCC;NSS,Excellent,Glad
+2024/03/27 10:33:50 pm GMT+5:30,,Male,23,"Puri, Odisha",12,7.8,7.5,7.6,7.65,8,80,0,NPTEL Courses;NCC;NSS,Excellent,Glad
+2024/03/27 10:34:47 pm GMT+5:30,,Male,21,"Bhadrak, Odisha",12,7.6,7.8,7.4,7.4,7.9,89,0,NPTEL Courses;NCC;NSS;Any Certification Course,Excellent,Neutral
+2024/03/27 10:36:25 pm GMT+5:30,,Female,21,"Bhubaneswar, Odisha",12,7.8,7.65,7.8,8.13,8.5,94,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);NSS;Any Certification Course",Excellent,Glad
+2024/03/27 10:37:50 pm GMT+5:30,,Female,21,"Bhubaneswar, Odisha",11,7.8,7.9,7.65,7.55,8,80.32,1,NPTEL Courses;NCC;NSS;Any Certification Course,Excellent,Glad
+2024/03/27 10:38:55 pm GMT+5:30,,Female,21,"Bhadrak, Odisha",12,7.6,7.56,7.45,8.01,7.96,89,0,NPTEL Courses;NCC;Any Certification Course;OB,Excellent,Happy
+2024/03/27 10:52:27 pm GMT+5:30,300,Male,21,"Durgi, Bissamcuttack, Rayagada, Odisha",14,5.6,6.2,6.4,6.8,7.5,89,0,NPTEL Courses;Any Certification Course,Good,Neutral
+2024/03/27 10:54:27 pm GMT+5:30,301,Male,23,"Sahassan, Polsora, Berhampur, Odisha",12,7,7,8.2,8.3,8.9,94,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Excellent,Glad
+2024/03/27 10:56:38 pm GMT+5:30,302,Male,22,"Paralakhemundi, Gajapati, Odisha",12,5.3,6.2,6.3,6.8,6.8,88,2,NSS,Satisfactory,Sad
+2024/03/27 10:58:30 pm GMT+5:30,303,Male,21,"Rayagada, Odisha",10,6.2,6.3,6.5,6.4,7.8,94,0,"NPTEL Courses;Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Good,Neutral
+2024/03/27 11:00:50 pm GMT+5:30,304,Female,21,"Ludhiana, Punjab",12,5.6,5.8,6,5.6,8.5,81,3,NCC,Excellent,Happy
+2024/03/27 11:05:14 pm GMT+5:30,305,Female,20,"TataTarini, Ganjam, Odisha",10,5.8,5.9,6,6.2,6.2,80,0,Any Certification Course,Bad,Sad
+2024/03/27 11:08:05 pm GMT+5:30,306,Male,20,"Rayagada, Odisha",10,6.3,6.4,6.8,6.9,7.4,74,0,NSS,Excellent,Glad
+2024/03/27 11:10:14 pm GMT+5:30,307,Female,19,"Rourkela, S\ndargarh, Odisha",12,8.9,9.6,6.8,7.4,9.8,98,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Excellent,Glad
+2024/03/27 11:12:46 pm GMT+5:30,308,Male,20,"Daringbadi, Phulbani, Kandhamal, Odisha",12,7.4,8.5,9.3,6.5,7.4,89,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...)",Satisfactory,Sad
+2024/03/27 11:14:50 pm GMT+5:30,309,Female,19,"Bangalore, Karnataka",13,5.6,8.9,6.5,8.7,5.7,85,0,"Any Club (Like GDSC, DSC, SARS, AIML, AR-VR, IOT, Cyber Security, PDCS, etc...);OB",Excellent,Neutral
+2024/03/27 11:16:50 pm GMT+5:30,310,Female,19,"Jeypore, Koraput, Odisha",14,6.5,6.9,6.8,7.2,7.4,82,0,NCC;OB,Bad,Angry

@@ -11,8 +11,16 @@ from typing import Optional
 class StudentFeedbackCreate(BaseModel):
     """Schema for submitting new student feedback."""
 
-    roll_number: str = Field(..., description="Student roll number", example="CS2021001")
-    gender: str = Field(..., description="Student gender", example="Male")
+    roll_number: str = Field(
+        ...,
+        description="Student roll number",
+        json_schema_extra={"example": "CS2021001"}
+    )
+    gender: str = Field(
+        ...,
+        description="Student gender",
+        json_schema_extra={"example": "Male"}
+    )
     age: int = Field(..., ge=17, le=35, description="Student age between 17 and 35")
     study_hours_per_day: int = Field(..., ge=1, le=24, description="Daily study hours")
     attendance_percentage: int = Field(..., ge=0, le=100, description="Attendance percentage")
@@ -20,12 +28,12 @@ class StudentFeedbackCreate(BaseModel):
     academic_feedback: str = Field(
         ...,
         description="Feedback about academic satisfaction",
-        example="Good"
+        json_schema_extra={"example": "Good"}
     )
     emotional_feedback: str = Field(
         ...,
         description="Emotional state based on performance",
-        example="Happy"
+        json_schema_extra={"example": "Happy"}
     )
 
     @field_validator("gender")
@@ -65,8 +73,14 @@ class StudentFeedbackUpdate(BaseModel):
     This is called a PATCH pattern.
     """
 
-    academic_feedback: Optional[str] = Field(None, example="Excellent")
-    emotional_feedback: Optional[str] = Field(None, example="Happy")
+    academic_feedback: Optional[str] = Field(
+        None,
+        json_schema_extra={"example": "Excellent"}
+    )
+    emotional_feedback: Optional[str] = Field(
+        None,
+        json_schema_extra={"example": "Happy"}
+    )
     study_hours_per_day: Optional[int] = Field(None, ge=1, le=24)
     attendance_percentage: Optional[int] = Field(None, ge=0, le=100)
     active_backlogs: Optional[int] = Field(None, ge=0)

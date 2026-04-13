@@ -56,12 +56,57 @@ class StudentFeedbackCreate(BaseModel):
         return v
 
 
+class StudentFeedbackUpdate(BaseModel):
+    """
+    Schema for updating existing student feedback.
+
+    All fields are Optional — meaning the client can update
+    just one field without sending all the others.
+    This is called a PATCH pattern.
+    """
+
+    academic_feedback: Optional[str] = Field(None, example="Excellent")
+    emotional_feedback: Optional[str] = Field(None, example="Happy")
+    study_hours_per_day: Optional[int] = Field(None, ge=1, le=24)
+    attendance_percentage: Optional[int] = Field(None, ge=0, le=100)
+    active_backlogs: Optional[int] = Field(None, ge=0)
+
+    @field_validator("academic_feedback")
+    @classmethod
+    def validate_academic_feedback(cls, v: Optional[str]) -> Optional[str]:
+        """Validate academic feedback only if a value is provided."""
+        if v is None:
+            return v
+        allowed = {"Excellent", "Good", "Satisfactory", "Bad"}
+        if v not in allowed:
+            raise ValueError(f"Academic feedback must be one of: {allowed}")
+        return v
+
+    @field_validator("emotional_feedback")
+    @classmethod
+    def validate_emotional_feedback(cls, v: Optional[str]) -> Optional[str]:
+        """Validate emotional feedback only if a value is provided."""
+        if v is None:
+            return v
+        allowed = {"Happy", "Glad", "Neutral", "Sad", "Angry"}
+        if v not in allowed:
+            raise ValueError(f"Emotional feedback must be one of: {allowed}")
+        return v
+
+
 class StudentFeedbackResponse(BaseModel):
-    """Schema for the API response after submitting feedback."""
+    """Schema for the API response after submitting or fetching feedback."""
 
     id: int = Field(..., description="Auto-generated record ID")
     roll_number: str
+    gender: str
+    age: int
+    study_hours_per_day: int
+    attendance_percentage: int
+    active_backlogs: int
     academic_feedback: str
     emotional_feedback: str
-    sentiment_label: str = Field(..., description="Predicted sentiment: Positive, Neutral, or Negative")
+    sentiment_label: str = Field(
+        ..., description="Predicted sentiment: Positive, Neutral, or Negative"
+    )
     message: str = Field(..., description="Confirmation message")

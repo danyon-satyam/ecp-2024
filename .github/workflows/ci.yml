@@ -67,6 +67,7 @@ jobs:
       - name: Run tests
         env:
           DATABASE_URL: postgresql://postgres:postgres@localhost:5432/sentiment_db_test
+          PGUSER: postgres
         run: |
           pytest --tb=short -v
 

@@ -32,7 +32,7 @@ jobs:
         image: postgres:15
         env:
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: testpassword123
+          POSTGRES_PASSWORD: postgres
           POSTGRES_DB: sentiment_db_test
         options: >-
           --health-cmd pg_isready

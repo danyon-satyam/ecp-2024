@@ -1,46 +1,86 @@
 """
 Pytest configuration and shared fixtures.
 
-conftest.py is automatically loaded by Pytest before running any tests.
-Fixtures defined here are available to ALL test files without importing them.
+For testing we use SQLite (an in-memory database) instead of PostgreSQL.
+Why? Because:
+  - SQLite needs zero setup — no server, no credentials
+  - Each test run gets a completely fresh database
+  - Tests run in milliseconds
+  - The real PostgreSQL is never touched by tests
 
-A fixture is a reusable piece of setup code. For example, instead of
-creating a test client in every single test function, we define it once
-here and Pytest injects it automatically wherever it is needed.
+This is called a Test Double — a safe replacement for the real dependency.
 """
 import pytest
 from fastapi.testclient import TestClient
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker, Session
 
 from app.main import app
-from app.api.v1.endpoints.feedback import feedback_store
+from app.core.database import get_db
+from app.models.feedback import Base
+
+# SQLite in-memory database — exists only during the test session
+TEST_DATABASE_URL = "sqlite:///./test.db"
+
+engine = create_engine(
+    TEST_DATABASE_URL,
+    connect_args={"check_same_thread": False},  # Required for SQLite
+)
+TestingSessionLocal = sessionmaker(
+    autocommit=False, autoflush=False, bind=engine
+)
+
+
+@pytest.fixture(scope="function", autouse=True)
+def setup_database():
+    """
+    Create all tables before each test, drop them after.
+
+    scope="function" means this runs fresh for EVERY test function.
+    This guarantees tests never share database state.
+    """
+    Base.metadata.create_all(bind=engine)
+    yield
+    Base.metadata.drop_all(bind=engine)
+
+
+@pytest.fixture
+def db_session() -> Session:
+    """Provide a clean database session for each test."""
+    session = TestingSessionLocal()
+    try:
+        yield session
+    finally:
+        session.close()
 
 
 @pytest.fixture
 def client() -> TestClient:
     """
-    Create a fresh FastAPI TestClient for each test.
+    Create a TestClient that uses the SQLite test database.
 
-    TestClient simulates HTTP requests to your API without needing
-    a running server. It is fast, isolated, and perfect for testing.
-
-    Yields the client, then clears the feedback_store after each test
-    so tests do not interfere with each other. This is called teardown.
+    We override FastAPI's get_db dependency to inject the test
+    database session instead of the real PostgreSQL session.
+    This is called Dependency Injection — a core FastAPI feature.
     """
+    def override_get_db():
+        session = TestingSessionLocal()
+        try:
+            yield session
+        finally:
+            session.close()
+
+    app.dependency_overrides[get_db] = override_get_db
+
     with TestClient(app) as test_client:
         yield test_client
-    # Teardown: clear all records after every test so each test starts fresh
-    feedback_store.clear()
+
+    app.dependency_overrides.clear()
 
 
 @pytest.fixture
 def sample_feedback() -> dict:
-    """
-    A valid sample feedback payload for reuse across tests.
-
-    Instead of copy-pasting this dictionary in every test,
-    we define it once here. If we need to change the structure
-    later, we change it in one place only.
-    """
+    """Valid sample feedback payload for reuse across tests."""
     return {
         "roll_number": "CS2021001",
         "gender": "Male",
@@ -55,7 +95,7 @@ def sample_feedback() -> dict:
 
 @pytest.fixture
 def negative_feedback() -> dict:
-    """A valid feedback payload that should produce a Negative sentiment."""
+    """Feedback payload that produces Negative sentiment."""
     return {
         "roll_number": "CS2021002",
         "gender": "Female",

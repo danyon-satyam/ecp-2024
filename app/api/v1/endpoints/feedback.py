@@ -1,201 +1,144 @@
 """
-Student Feedback endpoints.
+Student Feedback API endpoints.
 
-This module defines all CRUD API routes for student feedback.
+These endpoints now use the FeedbackRepository for all database operations.
+Notice how clean these functions are — they handle HTTP concerns only:
+  - Parse the request
+  - Call the repository
+  - Return the response with the correct status code
 
-CRUD stands for:
-  - Create  → POST   /feedback
-  - Read    → GET    /feedback      (all records)
-  - Read    → GET    /feedback/{id} (single record)
-  - Update  → PATCH  /feedback/{id}
-  - Delete  → DELETE /feedback/{id}
-
-Each operation returns the correct HTTP status code so clients
-know exactly what happened.
+All database logic lives in FeedbackRepository.
+All sentiment logic lives in sentiment.py.
+This file only handles HTTP. One responsibility per file.
 """
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status
+from sqlalchemy.orm import Session
 
+from app.core.database import get_db
 from app.schemas.student import (
     StudentFeedbackCreate,
     StudentFeedbackResponse,
     StudentFeedbackUpdate,
 )
-from app.services.sentiment import calculate_sentiment, get_sentiment_summary
+from app.services.feedback_repository import FeedbackRepository
 
 router = APIRouter()
 
-# Temporary in-memory storage (replaced with real database on Day 7)
-# This acts like a simple list-based database for now
-feedback_store: list[dict] = []
 
-
-def _find_record(record_id: int) -> dict:
+def _get_repo(db: Session = Depends(get_db)) -> FeedbackRepository:
     """
-    Find a feedback record by ID.
+    FastAPI dependency that creates a FeedbackRepository for each request.
 
-    This is a private helper function (note the underscore prefix).
-    Private helpers are not API endpoints — they are internal utilities
-    used by multiple endpoints to avoid repeating the same logic.
-
-    Args:
-        record_id: The ID of the record to find
-
-    Raises:
-        HTTPException: 404 if the record is not found
-
-    Returns:
-        The matching record dictionary
+    Depends(get_db) injects a database session automatically.
+    This function wraps it in a repository and passes it to the endpoint.
     """
-    for record in feedback_store:
-        if record["id"] == record_id:
-            return record
-    raise HTTPException(
-        status_code=status.HTTP_404_NOT_FOUND,
-        detail=f"Feedback record with ID {record_id} not found.",
-    )
+    return FeedbackRepository(db)
 
 
-# ─────────────────────────────────────────────
-# CREATE
-# ─────────────────────────────────────────────
+def _get_record_or_404(record_id: int, repo: FeedbackRepository):
+    """
+    Fetch a record by ID or raise 404 if not found.
+
+    Private helper used by GET one, PATCH, and DELETE endpoints.
+    """
+    record = repo.get_by_id(record_id)
+    if not record:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Feedback record with ID {record_id} not found.",
+        )
+    return record
+
 
 @router.post(
     "/feedback",
     response_model=StudentFeedbackResponse,
     status_code=status.HTTP_201_CREATED,
     summary="Submit student feedback",
-    description="Submit a new student feedback record. Sentiment is calculated automatically.",
     tags=["Feedback"],
 )
-def submit_feedback(feedback: StudentFeedbackCreate) -> StudentFeedbackResponse:
-    """
-    Submit new student feedback.
-
-    The sentiment label (Positive / Neutral / Negative) is calculated
-    automatically using our sentiment service based on the student's
-    emotional and academic feedback values.
-    """
-    sentiment_label = calculate_sentiment(
-        emotional_feedback=feedback.emotional_feedback,
-        academic_feedback=feedback.academic_feedback,
-    )
-
-    record_id = len(feedback_store) + 1
-    record = {
-        "id": record_id,
-        **feedback.model_dump(),
-        "sentiment_label": sentiment_label,
-    }
-    feedback_store.append(record)
-
+def submit_feedback(
+    feedback: StudentFeedbackCreate,
+    repo: FeedbackRepository = Depends(_get_repo),
+) -> StudentFeedbackResponse:
+    """Submit new student feedback. Sentiment is calculated automatically."""
+    record = repo.create(feedback)
     return StudentFeedbackResponse(
-        **record,
-        message=f"Feedback submitted. Sentiment detected: {sentiment_label}",
+        **record.__dict__,
+        message=f"Feedback submitted. Sentiment: {record.sentiment_label}",
     )
 
-
-# ─────────────────────────────────────────────
-# READ ALL
-# ─────────────────────────────────────────────
 
 @router.get(
     "/feedback",
     summary="Get all feedback records",
-    description="Retrieve all submitted student feedback records with sentiment summary.",
     tags=["Feedback"],
 )
-def get_all_feedback() -> dict:
-    """
-    Return all feedback records along with a sentiment summary.
-
-    The summary shows the distribution of Positive / Neutral / Negative
-    sentiments across all submitted records — useful for university dashboards.
-    """
+def get_all_feedback(
+    skip: int = 0,
+    limit: int = 100,
+    repo: FeedbackRepository = Depends(_get_repo),
+) -> dict:
+    """Return all feedback records with sentiment summary and pagination."""
+    records = repo.get_all(skip=skip, limit=limit)
+    summary = repo.count_by_sentiment()
     return {
-        "summary": get_sentiment_summary(feedback_store),
-        "records": feedback_store,
+        "summary": summary,
+        "records": [
+            StudentFeedbackResponse(**r.__dict__, message="").model_dump()
+            for r in records
+        ],
     }
 
-
-# ─────────────────────────────────────────────
-# READ ONE
-# ─────────────────────────────────────────────
 
 @router.get(
     "/feedback/{record_id}",
     response_model=StudentFeedbackResponse,
     summary="Get a single feedback record",
-    description="Retrieve one specific student feedback record by its ID.",
     tags=["Feedback"],
 )
-def get_feedback_by_id(record_id: int) -> StudentFeedbackResponse:
-    """
-    Retrieve a single feedback record by its unique ID.
-
-    Returns 404 if the record does not exist.
-    """
-    record = _find_record(record_id)
+def get_feedback_by_id(
+    record_id: int,
+    repo: FeedbackRepository = Depends(_get_repo),
+) -> StudentFeedbackResponse:
+    """Retrieve one feedback record by ID. Returns 404 if not found."""
+    record = _get_record_or_404(record_id, repo)
     return StudentFeedbackResponse(
-        **record,
+        **record.__dict__,
         message="Record retrieved successfully.",
     )
 
-
-# ─────────────────────────────────────────────
-# UPDATE
-# ─────────────────────────────────────────────
 
 @router.patch(
     "/feedback/{record_id}",
     response_model=StudentFeedbackResponse,
     summary="Update a feedback record",
-    description="Partially update an existing feedback record. Only send the fields you want to change.",
     tags=["Feedback"],
 )
-def update_feedback(record_id: int, updates: StudentFeedbackUpdate) -> StudentFeedbackResponse:
-    """
-    Partially update a student feedback record.
-
-    Uses PATCH (not PUT) because we allow partial updates —
-    the client only needs to send the fields they want to change.
-    Sentiment is automatically recalculated after any update.
-    """
-    record = _find_record(record_id)
-
-    # Apply only the fields that were actually sent (exclude_unset ignores fields not sent)
-    update_data = updates.model_dump(exclude_unset=True)
-    record.update(update_data)
-
-    # Recalculate sentiment after update
-    record["sentiment_label"] = calculate_sentiment(
-        emotional_feedback=record["emotional_feedback"],
-        academic_feedback=record["academic_feedback"],
-    )
-
+def update_feedback(
+    record_id: int,
+    updates: StudentFeedbackUpdate,
+    repo: FeedbackRepository = Depends(_get_repo),
+) -> StudentFeedbackResponse:
+    """Partially update a feedback record. Sentiment is recalculated automatically."""
+    record = _get_record_or_404(record_id, repo)
+    updated = repo.update(record, updates)
     return StudentFeedbackResponse(
-        **record,
-        message="Feedback record updated. Sentiment recalculated.",
+        **updated.__dict__,
+        message="Record updated. Sentiment recalculated.",
     )
 
-
-# ─────────────────────────────────────────────
-# DELETE
-# ─────────────────────────────────────────────
 
 @router.delete(
     "/feedback/{record_id}",
     status_code=status.HTTP_204_NO_CONTENT,
     summary="Delete a feedback record",
-    description="Permanently delete a student feedback record by its ID.",
     tags=["Feedback"],
 )
-def delete_feedback(record_id: int) -> None:
-    """
-    Delete a student feedback record permanently.
-
-    Returns HTTP 204 No Content on success.
-    204 means: the action was successful but there is nothing to return.
-    This is the correct REST standard for DELETE operations.
-    """
-    record = _find_record(record_id)
-    feedback_store.remove(record)
+def delete_feedback(
+    record_id: int,
+    repo: FeedbackRepository = Depends(_get_repo),
+) -> None:
+    """Delete a feedback record permanently. Returns 204 on success."""
+    record = _get_record_or_404(record_id, repo)
+    repo.delete(record)

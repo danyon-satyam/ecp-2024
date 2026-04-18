@@ -1,80 +1,68 @@
 """
-Sentiment Analysis Service.
+Sentiment Analysis Service — public interface for sentiment prediction.
 
-This module contains the core business logic for calculating
-student sentiment scores. Keeping this separate from the API layer
-means we can reuse it anywhere (API, scripts, tests) and swap
-out the ML model later without touching the API code.
+This module is the single entry point for sentiment prediction across
+the entire application. It delegates to the ML service transparently.
+
+Why this indirection layer?
+  The repository, endpoints, and tests all import calculate_sentiment()
+  from here. If we ever swap CatBoost for a different model, or add
+  an ensemble, we only change this file. Nothing else in the app changes.
+  This is the Facade pattern — one clean interface hiding complexity behind it.
 """
-
-
-# Sentiment mappings based on our domain knowledge from the notebook
-EMOTIONAL_SENTIMENT_MAP = {
-    "Happy": 1,
-    "Glad": 1,
-    "Neutral": 0,
-    "Sad": -1,
-    "Angry": -1,
-}
-
-ACADEMIC_SENTIMENT_MAP = {
-    "Excellent": 1,
-    "Good": 1,
-    "Satisfactory": 0,
-    "Bad": -1,
-}
-
-# Weights from our notebook analysis (emotional carries more weight)
-WEIGHT_EMOTIONAL = 0.7
-WEIGHT_ACADEMIC = 0.3
+from app.services.ml_model import sentiment_ml_service
 
 
 def calculate_sentiment(emotional_feedback: str, academic_feedback: str) -> str:
     """
-    Calculate overall sentiment label for a student.
+    Calculate the sentiment label for a student feedback record.
 
-    Uses a weighted combination of emotional and academic feedback
-    scores, matching the methodology from the research notebook.
+    Delegates to the ML service which uses the trained CatBoost model
+    if available, or falls back to rule-based weighted scoring.
 
     Args:
         emotional_feedback: Student's emotional state (e.g. 'Happy', 'Sad')
         academic_feedback: Student's academic satisfaction (e.g. 'Good', 'Bad')
 
     Returns:
-        A sentiment label string: 'Positive', 'Neutral', or 'Negative'
+        Sentiment label: 'Positive', 'Neutral', or 'Negative'
+
+    Example:
+        >>> calculate_sentiment('Happy', 'Good')
+        'Positive'
+        >>> calculate_sentiment('Sad', 'Bad')
+        'Negative'
     """
-    emotional_score = EMOTIONAL_SENTIMENT_MAP.get(emotional_feedback, 0)
-    academic_score = ACADEMIC_SENTIMENT_MAP.get(academic_feedback, 0)
-
-    weighted_score = (
-        WEIGHT_EMOTIONAL * emotional_score + WEIGHT_ACADEMIC * academic_score
-    )
-
-    if weighted_score > 0:
-        return "Positive"
-    elif weighted_score < 0:
-        return "Negative"
-    else:
-        return "Neutral"
+    return sentiment_ml_service.predict(emotional_feedback, academic_feedback)
 
 
 def get_sentiment_summary(records: list[dict]) -> dict:
     """
-    Generate a summary of sentiment distribution across all records.
+    Generate sentiment distribution summary across a list of records.
 
     Args:
-        records: List of all feedback records
+        records: List of feedback record dictionaries with 'sentiment_label' key
 
     Returns:
-        A dictionary with counts and percentages for each sentiment label
+        Dictionary with counts and percentages for each sentiment label
+
+    Example:
+        >>> records = [{'sentiment_label': 'Positive'}, {'sentiment_label': 'Negative'}]
+        >>> get_sentiment_summary(records)
+        {'total': 2, 'positive': 1, 'positive_percentage': 50.0, ...}
     """
     total = len(records)
     if total == 0:
-        return {"total": 0, "positive": 0, "neutral": 0, "negative": 0}
+        return {
+            "total": 0,
+            "positive": 0, "positive_percentage": 0.0,
+            "neutral": 0, "neutral_percentage": 0.0,
+            "negative": 0, "negative_percentage": 0.0,
+        }
 
-    positive = sum(1 for r in records if r["sentiment_label"] == "Positive")
-    neutral = sum(1 for r in records if r["sentiment_label"] == "Neutral")
-    negative = sum(1 for r in records if r["sentiment_label"] == "Negative")
+    positive = sum(1 for r in records if r.get("sentiment_label") == "Positive")
+    neutral = sum(1 for r in records if r.get("sentiment_label") == "Neutral")
+    negative = sum(1 for r in records if r.get("sentiment_label") == "Negative")
 
     return {
         "total": total,
@@ -85,3 +73,13 @@ def get_sentiment_summary(records: list[dict]) -> dict:
         "negative": negative,
         "negative_percentage": round((negative / total) * 100, 2),
     }
+
+
+def get_model_info() -> dict:
+    """
+    Return information about the current prediction model.
+
+    Returns:
+        Dictionary with model type, mode, and readiness status
+    """
+    return sentiment_ml_service.get_model_info()

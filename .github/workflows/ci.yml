@@ -25,8 +25,6 @@ jobs:
       matrix:
         python-version: ["3.11", "3.12"]
 
-    # PostgreSQL service container for CI
-    # GitHub Actions spins this up automatically before tests run
     services:
       postgres:
         image: postgres:15
@@ -64,13 +62,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Run Alembic migrations
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/sentiment_db_test
+        run: |
+          alembic upgrade head
+
       - name: Run tests
         env:
           DATABASE_URL: postgresql://postgres:postgres@localhost:5432/sentiment_db_test
-          PGUSER: postgres
         run: |
           pytest --tb=short -v
 
       - name: Test Summary
         if: always()
-        run: echo "CI completed for Python ${{ matrix.python-version }}"  
+        run: echo "CI completed for Python ${{ matrix.python-version }}"

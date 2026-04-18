@@ -19,7 +19,7 @@ from sqlalchemy.orm import sessionmaker, Session
 from typing import Generator
 
 from app.core.config import settings
-from app.models.feedback import Base
+from app.models.student_feedback import Base
 
 
 # Create the database engine

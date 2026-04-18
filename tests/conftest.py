@@ -17,7 +17,7 @@ from sqlalchemy.orm import sessionmaker, Session
 
 from app.main import app
 from app.core.database import get_db
-from app.models.feedback import Base
+from app.models.student_feedback import Base
 
 # SQLite in-memory database — exists only during the test session
 TEST_DATABASE_URL = "sqlite:///./test.db"

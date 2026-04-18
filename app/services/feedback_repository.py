@@ -17,7 +17,7 @@ This makes testing and debugging straightforward.
 """
 from sqlalchemy.orm import Session
 
-from app.models.feedback import StudentFeedback
+from app.models.student_feedback import StudentFeedback
 from app.schemas.student import StudentFeedbackCreate, StudentFeedbackUpdate
 from app.services.sentiment import calculate_sentiment
 

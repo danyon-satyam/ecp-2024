@@ -166,10 +166,20 @@ class TestGetFeedbackById:
         assert response.status_code == 404
 
     def test_404_response_contains_detail_message(self, client: TestClient):
-        """The 404 response must include a human-readable detail message."""
+        """
+        The 404 response must include a human-readable message field.
+
+        Updated to match our custom error handler format from Day 13.
+        Our global handler returns 'message' and 'error_code' instead
+        of FastAPI's default 'detail' key. This is our standard error
+        response structure across the entire API.
+        """
         response = client.get("/api/v1/feedback/999")
         data = response.json()
-        assert "detail" in data
+        # Our custom error handler uses 'message' not FastAPI's default 'detail'
+        assert "message" in data
+        assert "error_code" in data
+        assert data["error_code"] == "RECORD_NOT_FOUND"
 
 
 class TestUpdateFeedback:

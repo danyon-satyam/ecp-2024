@@ -15,6 +15,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
 from app.core.database import get_db
+from app.core.exceptions import RecordNotFoundException
 from app.schemas.student import (
     StudentFeedbackCreate,
     StudentFeedbackResponse,
@@ -37,16 +38,14 @@ def _get_repo(db: Session = Depends(get_db)) -> FeedbackRepository:
 
 def _get_record_or_404(record_id: int, repo: FeedbackRepository):
     """
-    Fetch a record by ID or raise 404 if not found.
+    Fetch a record by ID or raise RecordNotFoundException.
 
-    Private helper used by GET one, PATCH, and DELETE endpoints.
+    Raises our domain exception instead of HTTPException directly.
+    The global error handler converts it to the correct HTTP response.
     """
     record = repo.get_by_id(record_id)
     if not record:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Feedback record with ID {record_id} not found.",
-        )
+        raise RecordNotFoundException(record_id)
     return record
 
 

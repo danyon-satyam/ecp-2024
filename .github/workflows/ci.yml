@@ -68,11 +68,11 @@ jobs:
         run: |
           alembic upgrade head
 
-      - name: Run tests
+      - name: Run tests with coverage
         env:
           DATABASE_URL: postgresql://postgres:postgres@localhost:5432/sentiment_db_test
         run: |
-          pytest --tb=short -v
+          pytest --tb=short -v --cov=app --cov-report=term-missing --cov-fail-under=80
 
       - name: Test Summary
         if: always()

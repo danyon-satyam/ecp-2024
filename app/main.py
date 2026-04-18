@@ -1,13 +1,18 @@
 """
 Main application entry point.
 
-Tables are managed by Alembic migrations — run 'alembic upgrade head'.
-ML model is loaded at startup — run 'python scripts/train_model.py'.
+Setup order:
+  1. alembic upgrade head     — apply database migrations
+  2. python scripts/train_model.py  — train ML model
+  3. python scripts/seed_database.py — seed with mock data
+  4. uvicorn app.main:app --reload  — start API server
 """
 from fastapi import FastAPI
 from app.core.config import settings
+from app.core.error_handlers import register_error_handlers
 from app.api.v1.endpoints.feedback import router as feedback_router
 from app.api.v1.endpoints.analytics import router as analytics_router
+from app.api.v1.endpoints.visualisations import router as viz_router
 from app.services.sentiment import get_model_info
 
 app = FastAPI(
@@ -15,27 +20,30 @@ app = FastAPI(
     version=settings.app_version,
     description=(
         "A production-grade REST API for analysing student sentiment "
-        "at universities. Powered by CatBoost ML model trained on "
-        "real university feedback data."
+        "at universities. Powered by CatBoost ML model."
     ),
 )
 
+# Register global exception handlers — must be before routers
+register_error_handlers(app)
+
 app.include_router(feedback_router, prefix=settings.api_v1_prefix)
-app.include_router(analytics_router, prefix=f"{settings.api_v1_prefix}/analytics")
+app.include_router(
+    analytics_router,
+    prefix=f"{settings.api_v1_prefix}/analytics",
+)
+app.include_router(
+    viz_router,
+    prefix=f"{settings.api_v1_prefix}/visualisations",
+)
 
 
 @app.get("/health", tags=["Health"])
 def health_check() -> dict:
-    """
-    Health check endpoint — returns API and ML model status.
-
-    Used by deployment systems, monitoring tools, and Swagger UI
-    to verify the API and its ML components are operational.
-    """
-    model_info = get_model_info()
+    """Health check — returns API and ML model status."""
     return {
         "status": "ok",
         "message": f"{settings.app_name} is live",
         "version": settings.app_version,
-        "ml_model": model_info,
+        "ml_model": get_model_info(),
     }

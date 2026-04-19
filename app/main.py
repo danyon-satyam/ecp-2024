@@ -39,7 +39,7 @@ app.include_router(
 
 
 @app.get("/health", tags=["Health"])
-def health_check() -> dict:
+async def health_check() -> dict:
     """Health check — returns API and ML model status."""
     return {
         "status": "ok",

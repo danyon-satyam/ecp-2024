@@ -36,7 +36,7 @@ def _get_repo(db: Session = Depends(get_db)) -> FeedbackRepository:
     description="Returns total counts and percentages for each sentiment label.",
     tags=["Analytics"],
 )
-def get_summary(repo: FeedbackRepository = Depends(_get_repo)) -> dict:
+async def get_summary(repo: FeedbackRepository = Depends(_get_repo)) -> dict:
     """
     Return the overall sentiment distribution across all records.
 
@@ -57,7 +57,7 @@ def get_summary(repo: FeedbackRepository = Depends(_get_repo)) -> dict:
     description="Retrieve all records with a specific sentiment label.",
     tags=["Analytics"],
 )
-def get_by_sentiment(
+async def get_by_sentiment(
     sentiment: str = Query(
         ...,
         description="Sentiment label to filter by",
@@ -119,7 +119,7 @@ def get_by_sentiment(
     description="Sentiment breakdown grouped by gender and feedback category.",
     tags=["Analytics"],
 )
-def get_trends(db: Session = Depends(get_db)) -> dict:
+async def get_trends(db: Session = Depends(get_db)) -> dict:
     """
     Return sentiment trends broken down by gender and feedback categories.
 
@@ -196,7 +196,7 @@ def get_trends(db: Session = Depends(get_db)) -> dict:
     description="Students flagged as potentially at risk based on negative sentiment, high backlogs, or low attendance.",
     tags=["Analytics"],
 )
-def get_at_risk_students(
+async def get_at_risk_students(
     skip: int = Query(0, ge=0),
     limit: int = Query(50, ge=1, le=200),
     db: Session = Depends(get_db),

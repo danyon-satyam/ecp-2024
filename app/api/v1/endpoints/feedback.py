@@ -1,17 +1,13 @@
 """
 Student Feedback API endpoints.
 
-These endpoints now use the FeedbackRepository for all database operations.
-Notice how clean these functions are — they handle HTTP concerns only:
-  - Parse the request
-  - Call the repository
-  - Return the response with the correct status code
+All endpoint functions are async def — this allows FastAPI to handle
+hundreds of concurrent requests on a single event loop without blocking.
 
-All database logic lives in FeedbackRepository.
-All sentiment logic lives in sentiment.py.
-This file only handles HTTP. One responsibility per file.
+FastAPI automatically runs Depends(get_db) in a thread pool when used
+inside async functions, so synchronous SQLAlchemy works safely here.
 """
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm import Session
 
 from app.core.database import get_db
@@ -27,12 +23,7 @@ router = APIRouter()
 
 
 def _get_repo(db: Session = Depends(get_db)) -> FeedbackRepository:
-    """
-    FastAPI dependency that creates a FeedbackRepository for each request.
-
-    Depends(get_db) injects a database session automatically.
-    This function wraps it in a repository and passes it to the endpoint.
-    """
+    """Dependency that creates a FeedbackRepository for each request."""
     return FeedbackRepository(db)
 
 
@@ -56,11 +47,16 @@ def _get_record_or_404(record_id: int, repo: FeedbackRepository):
     summary="Submit student feedback",
     tags=["Feedback"],
 )
-def submit_feedback(
+async def submit_feedback(
     feedback: StudentFeedbackCreate,
     repo: FeedbackRepository = Depends(_get_repo),
 ) -> StudentFeedbackResponse:
-    """Submit new student feedback. Sentiment is calculated automatically."""
+    """
+    Submit new student feedback.
+
+    async def allows FastAPI to handle concurrent submissions without
+    blocking — critical when 100s of students submit simultaneously.
+    """
     record = repo.create(feedback)
     return StudentFeedbackResponse(
         **record.__dict__,
@@ -73,7 +69,7 @@ def submit_feedback(
     summary="Get all feedback records",
     tags=["Feedback"],
 )
-def get_all_feedback(
+async def get_all_feedback(
     skip: int = 0,
     limit: int = 100,
     repo: FeedbackRepository = Depends(_get_repo),
@@ -84,7 +80,10 @@ def get_all_feedback(
     return {
         "summary": summary,
         "records": [
-            StudentFeedbackResponse(**r.__dict__, message="").model_dump()
+            StudentFeedbackResponse(
+                **r.__dict__,
+                message="",
+            ).model_dump()
             for r in records
         ],
     }
@@ -96,7 +95,7 @@ def get_all_feedback(
     summary="Get a single feedback record",
     tags=["Feedback"],
 )
-def get_feedback_by_id(
+async def get_feedback_by_id(
     record_id: int,
     repo: FeedbackRepository = Depends(_get_repo),
 ) -> StudentFeedbackResponse:
@@ -114,7 +113,7 @@ def get_feedback_by_id(
     summary="Update a feedback record",
     tags=["Feedback"],
 )
-def update_feedback(
+async def update_feedback(
     record_id: int,
     updates: StudentFeedbackUpdate,
     repo: FeedbackRepository = Depends(_get_repo),
@@ -134,10 +133,10 @@ def update_feedback(
     summary="Delete a feedback record",
     tags=["Feedback"],
 )
-def delete_feedback(
+async def delete_feedback(
     record_id: int,
     repo: FeedbackRepository = Depends(_get_repo),
 ) -> None:
-    """Delete a feedback record permanently. Returns 204 on success."""
+    """Delete a student feedback record permanently. Returns 204 on success."""
     record = _get_record_or_404(record_id, repo)
     repo.delete(record)

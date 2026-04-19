@@ -16,23 +16,22 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    """
-    Application settings loaded from environment variables.
-
-    Each field here maps to an environment variable of the same name
-    (case-insensitive). Default values are used for local development.
-    """
+    """Application settings loaded from environment variables."""
 
     # Application
     app_name: str = "Student Sentiment Analysis API"
     app_version: str = "0.1.0"
-    debug: bool = True
+    debug: bool = False
 
     # Database
     database_url: str = "postgresql://postgres:postgres@localhost:5432/sentiment_db"
 
     # API
     api_v1_prefix: str = "/api/v1"
+
+    # Performance
+    workers: int = 4
+    max_connections: int = 30
 
     model_config = SettingsConfigDict(
         env_file=".env",
@@ -41,6 +40,4 @@ class Settings(BaseSettings):
     )
 
 
-# Single shared instance — imported everywhere in the app
-# This is called the Singleton pattern: one config object for the whole app
 settings = Settings()

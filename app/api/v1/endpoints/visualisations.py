@@ -109,7 +109,7 @@ def _chart_response(buffer, filename: str) -> StreamingResponse:
     response_class=StreamingResponse,
     tags=["Visualisations"],
 )
-def sentiment_bar_chart(db: Session = Depends(get_db)) -> StreamingResponse:
+async def sentiment_bar_chart(db: Session = Depends(get_db)) -> StreamingResponse:
     """
     Generate and return a sentiment distribution bar chart.
 
@@ -128,7 +128,7 @@ def sentiment_bar_chart(db: Session = Depends(get_db)) -> StreamingResponse:
     response_class=StreamingResponse,
     tags=["Visualisations"],
 )
-def sentiment_pie_chart(db: Session = Depends(get_db)) -> StreamingResponse:
+async def sentiment_pie_chart(db: Session = Depends(get_db)) -> StreamingResponse:
     """Generate and return a sentiment distribution pie chart with percentages."""
     records = _get_all_records_as_dicts(db)
     buffer = viz_service.generate_sentiment_pie_chart(records)
@@ -145,7 +145,7 @@ def sentiment_pie_chart(db: Session = Depends(get_db)) -> StreamingResponse:
     response_class=StreamingResponse,
     tags=["Visualisations"],
 )
-def attendance_vs_sentiment(db: Session = Depends(get_db)) -> StreamingResponse:
+async def attendance_vs_sentiment(db: Session = Depends(get_db)) -> StreamingResponse:
     """
     Generate and return an attendance vs sentiment box plot.
 
@@ -167,7 +167,7 @@ def attendance_vs_sentiment(db: Session = Depends(get_db)) -> StreamingResponse:
     response_class=StreamingResponse,
     tags=["Visualisations"],
 )
-def backlogs_by_sentiment(db: Session = Depends(get_db)) -> StreamingResponse:
+async def backlogs_by_sentiment(db: Session = Depends(get_db)) -> StreamingResponse:
     """Generate and return a backlogs distribution chart grouped by sentiment."""
     records = _get_all_records_as_dicts(db)
     buffer = viz_service.generate_backlogs_by_sentiment(records)
@@ -184,7 +184,7 @@ def backlogs_by_sentiment(db: Session = Depends(get_db)) -> StreamingResponse:
     response_class=StreamingResponse,
     tags=["Visualisations"],
 )
-def gender_sentiment_chart(db: Session = Depends(get_db)) -> StreamingResponse:
+async def gender_sentiment_chart(db: Session = Depends(get_db)) -> StreamingResponse:
     """Generate and return a gender vs sentiment grouped bar chart."""
     records = _get_all_records_as_dicts(db)
     buffer = viz_service.generate_gender_sentiment_chart(records)
@@ -201,7 +201,7 @@ def gender_sentiment_chart(db: Session = Depends(get_db)) -> StreamingResponse:
     response_class=StreamingResponse,
     tags=["Visualisations"],
 )
-def study_hours_distribution(db: Session = Depends(get_db)) -> StreamingResponse:
+async def study_hours_distribution(db: Session = Depends(get_db)) -> StreamingResponse:
     """Generate and return a study hours distribution histogram by sentiment."""
     records = _get_all_records_as_dicts(db)
     buffer = viz_service.generate_study_hours_distribution(records)

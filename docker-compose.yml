@@ -1,0 +1,105 @@
+ # docker-compose.yml
+# Runs the complete Student Sentiment API stack locally using Docker.
+#
+# Services:
+#   - db: PostgreSQL 15 database
+#   - api: FastAPI application
+#   - migrate: runs Alembic migrations (runs once then exits)
+#
+# Usage:
+#   Start everything:       docker-compose up
+#   Start in background:    docker-compose up -d
+#   Stop everything:        docker-compose down
+#   Stop and delete data:   docker-compose down -v
+#   View logs:              docker-compose logs -f api
+#   Rebuild after changes:  docker-compose up --build
+
+version: "3.9"
+
+services:
+
+  # ─────────────────────────────────────────────
+  # PostgreSQL Database
+  # ─────────────────────────────────────────────
+  db:
+    image: postgres:15
+    container_name: sentiment_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: sentiment_db
+    ports:
+      # host_port:container_port
+      # Access the DB from your local machine at localhost:5433
+      # Using 5433 to avoid conflicting with your local PostgreSQL on 5432
+      - "5433:5432"
+    volumes:
+      # Named volume persists data even when container restarts
+      # Without this, all data is lost when the container stops
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ─────────────────────────────────────────────
+  # Database Migration Runner
+  # ─────────────────────────────────────────────
+  # This service runs Alembic migrations then exits.
+  # It runs AFTER db is healthy — depends_on with condition.
+  # The API service waits for this to finish before starting.
+  migrate:
+    build: .
+    container_name: sentiment_migrate
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/sentiment_db
+    command: alembic upgrade head
+    depends_on:
+      db:
+        condition: service_healthy
+    # restart: no means it runs once and doesn't restart on exit
+
+  # ─────────────────────────────────────────────
+  # FastAPI Application
+  # ─────────────────────────────────────────────
+  api:
+    build: .
+    container_name: sentiment_api
+    environment:
+      # DATABASE_URL uses 'db' (the service name) not 'localhost'
+      # Inside Docker network, containers talk to each other by service name
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/sentiment_db
+      APP_NAME: "Student Sentiment Analysis API"
+      DEBUG: "False"
+      API_V1_PREFIX: "/api/v1"
+      WORKERS: "1"
+    ports:
+      # Access the API at http://localhost:8000
+      - "8000:8000"
+    volumes:
+      # Mount local ML model files into the container
+      # This means you train once locally and the container uses that model
+      # In production (GCP), model files come from Cloud Storage instead
+      - ./app/ml:/app/app/ml:ro
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    # Restart the container if it crashes (production resilience)
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+# ─────────────────────────────────────────────
+# Named Volumes
+# ─────────────────────────────────────────────
+# Named volumes persist data outside the container lifecycle.
+# postgres_data survives container restarts and rebuilds.
+volumes:
+  postgres_data:

@@ -77,3 +77,8 @@ jobs:
       - name: Test Summary
         if: always()
         run: echo "CI completed for Python ${{ matrix.python-version }}"
+      
+      - name: Build Docker image (verify Dockerfile)
+        run: |
+          docker build -t sentiment-api-test .
+          echo "Docker image builds successfully"  

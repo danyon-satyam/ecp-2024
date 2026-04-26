@@ -1,0 +1,36 @@
+# .dockerignore
+# CRITICAL: Exclude everything that is not pure source code
+
+# Virtual Environment (The most likely culprit)
+venv/
+.venv/
+env/
+lib/
+bin/
+include/
+
+# Python Cache
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Git
+.git/
+.gitignore
+
+# Environment/Secrets
+.env
+*.env
+.env.*
+
+# Local ML Artifacts (GCP handles these via Cloud Storage)
+app/ml/*.joblib
+app/ml/*.pkl
+
+# Test & IDE Junk
+.pytest_cache/
+.coverage
+htmlcov/
+.vscode/
+.idea/

@@ -25,8 +25,8 @@ include/
 .env.*
 
 # Local ML Artifacts (GCP handles these via Cloud Storage)
-app/ml/*.joblib
-app/ml/*.pkl
+# app/ml/*.joblib
+# app/ml/*.pkl
 
 # Test & IDE Junk
 .pytest_cache/

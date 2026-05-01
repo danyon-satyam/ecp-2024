@@ -96,10 +96,6 @@ ENV API_V1_PREFIX="/api/v1"
 # --host 0.0.0.0: listen on all network interfaces (not just localhost)
 # This is required for the container to be accessible from outside.
 # 127.0.0.1 would make it unreachable from the host machine.
-# Copy the startup script and make it executable
-COPY scripts/gcp_startup.sh /app/scripts/gcp_startup.sh
-RUN chmod +x /app/scripts/gcp_startup.sh
-
 # For local Docker: use uvicorn directly
-# For GCP: override this CMD with the startup script
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
+# Run migrations, then start the server
+CMD alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-10000}

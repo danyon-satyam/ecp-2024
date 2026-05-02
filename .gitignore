@@ -8,3 +8,4 @@ venv/
 *.env
 # app/ml/*.joblib
 # app/ml/*.pkl
+catboost_info/

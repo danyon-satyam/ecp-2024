@@ -6,5 +6,6 @@ venv/
 .DS_Store
 .env
 *.env
-app/ml/*.joblib
-app/ml/*.pkl
+# app/ml/*.joblib
+# app/ml/*.pkl
+catboost_info/

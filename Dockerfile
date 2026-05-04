@@ -98,4 +98,6 @@ ENV API_V1_PREFIX="/api/v1"
 # 127.0.0.1 would make it unreachable from the host machine.
 # For local Docker: use uvicorn directly
 # Run migrations, then start the server
-CMD alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-10000}
+CMD alembic upgrade head && \
+    python scripts/seed_database.py --count 500 || true && \
+    uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-10000}

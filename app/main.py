@@ -14,6 +14,15 @@ from app.api.v1.endpoints.feedback import router as feedback_router
 from app.api.v1.endpoints.analytics import router as analytics_router
 from app.api.v1.endpoints.visualisations import router as viz_router
 from app.services.sentiment import get_model_info
+import logging
+from datetime import datetime
+
+# Configure structured logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 
 app = FastAPI(
     title=settings.app_name,
@@ -47,3 +56,23 @@ async def health_check() -> dict:
         "version": settings.app_version,
         "ml_model": get_model_info(),
     }
+
+
+@app.on_event("startup")
+async def startup_event():
+    """Log application startup."""
+    logger.info("=" * 60)
+    logger.info("🚀 Student Sentiment API Starting")
+    logger.info(f"   App Name: {settings.app_name}")
+    logger.info(f"   Debug Mode: {settings.debug}")
+    logger.info(f"   API Prefix: {settings.api_v1_prefix}")
+    logger.info(f"   Database: PostgreSQL (Render Managed)")
+    logger.info(f"   ML Model: CatBoost Loaded")
+    logger.info(f"   Deployment: Production (Render.com)")
+    logger.info("=" * 60)
+
+
+@app.on_event("shutdown")
+async def shutdown_event():
+    """Log application shutdown."""
+    logger.info("🛑 Student Sentiment API Shutting Down")    

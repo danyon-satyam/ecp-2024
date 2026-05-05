@@ -193,12 +193,23 @@ locust -f tests/load/locustfile.py --host=https://sentiment-api-vpmz.onrender.co
 
 ---
 
+
 ## 📚 Documentation
 
-* [Architecture Guide](docs/ARCHITECTURE.md) — System design, request flow, components
-* [Performance Report](docs/PERFORMANCE.md) — Load testing, benchmarks, bottlenecks
-* [Monitoring Guide](docs/MONITORING.md) — Production health checks, troubleshooting
-* [Deployment Guide](docs/RENDER_DEPLOYMENT.md) — Render.com deployment steps
+Comprehensive documentation available in the `docs/` directory:
+
+- **[Architecture Overview](docs/ARCHITECTURE.md)** — System design and component breakdown
+- **[API Documentation](docs/API_DOCUMENTATION.md)** — Complete API reference
+- **[Database Schema](docs/DATABASE_SCHEMA.md)** — Data model and indexing strategy
+- **[Performance Testing](docs/PERFORMANCE.md)** — Load test results and optimization
+- **[Monitoring Guide](docs/MONITORING.md)** — Observability and troubleshooting
+- **[Deployment Runbook](docs/DEPLOYMENT_RUNBOOK.md)** — Production deployment procedures
+- **[ADR-009](docs/adrs/ADR-009-render-deployment-platform.md)** — Deployment platform decision
+
+**For Reviewers:**
+
+- **[Demo Script](docs/DEMO_SCRIPT.md)** — Live demonstration walkthrough
+- **[Q&amp;A Preparation](docs/QA_PREPARATION.md)** — Anticipated questions and answers
 
 ---
 
@@ -213,8 +224,6 @@ This is an educational project for the ECP 2024 program. Not accepting external 
 The Copyright is reserverd by the Developer.
 
 ---
-
-
 
 ## 👤 Developer
 

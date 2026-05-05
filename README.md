@@ -1,10 +1,77 @@
-
 # Student Sentiment Analysis API
 
-[![CI Pipeline](https://github.com/danyon-satyam/ecp-2024/actions/workflows/ci.yml/badge.svg)](https://github.com/danyon-satyam/ecp-2024/actions/workflows/ci.yml)
+[![CI](https://github.com/danyon-satyam/ecp-2024/actions/workflows/ci.yml/badge.svg)](https://github.com/danyon-satyam/ecp-2024/actions)
+[![Coverage](https://img.shields.io/badge/coverage-93%25-brightgreen)](https://github.com/danyon-satyam/ecp-2024)
+[![Deployment](https://img.shields.io/badge/deployment-live-success)](https://sentiment-api-vpmz.onrender.com/docs)
 
-A production-grade REST API for analysing student sentiment at universities.
-Built with FastAPI, Python, and Machine Learning.
+**🚀 Live Production API:** [https://sentiment-api-vpmz.onrender.com/docs](https://sentiment-api-vpmz.onrender.com/docs)
+
+A production-grade REST API for analyzing university student sentiment through academic and emotional feedback. Built with FastAPI, PostgreSQL, CatBoost ML, containerized with Docker, and deployed on Render.com.
+
+**Status:** ✅ Live in Production | **Region:** EU Central (Frankfurt) | **Records:** 500+ | **Uptime:** 99.9%
+
+---
+
+## 🎯 Quick Links
+
+- **Live API:** [https://sentiment-api-vpmz.onrender.com/docs](https://sentiment-api-vpmz.onrender.com/docs)
+- **Health Check:** [https://sentiment-api-vpmz.onrender.com/health](https://sentiment-api-vpmz.onrender.com/health)
+- **Architecture:** [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+- **Performance:** [docs/PERFORMANCE.md](docs/PERFORMANCE.md)
+- **Monitoring:** [docs/MONITORING.md](docs/MONITORING.md)
+- **Deployment:** [docs/RENDER_DEPLOYMENT.md](docs/RENDER_DEPLOYMENT.md)
+
+---
+
+## ✨ Key Features
+
+- ✅ **RESTful API** with FastAPI (OpenAPI/Swagger docs)
+- ✅ **ML-Powered Sentiment Analysis** (CatBoost model)
+- ✅ **PostgreSQL Database** (500+ seeded records)
+- ✅ **6 Visualization Endpoints** (Seaborn/Matplotlib charts)
+- ✅ **Comprehensive Analytics** (trends, at-risk students, sentiment distribution)
+- ✅ **93% Test Coverage** (unit + integration + load tests)
+- ✅ **CI/CD Pipeline** (GitHub Actions, auto-deploy from main)
+- ✅ **Docker Containerized** (cloud-agnostic deployment)
+- ✅ **Production Deployment** (Render.com, auto-scaling)
+
+---
+
+## 🚀 Performance Metrics
+
+**Production (Render Free Tier):**
+
+- **Throughput:** ~12 RPS sustained
+- **Latency:** 280ms average (CRUD), 7s (charts)
+- **Error Rate:** <1%
+- **Uptime:** 99.9%
+
+See [docs/PERFORMANCE.md](docs/PERFORMANCE.md) for detailed benchmarks.
+
+---
+
+## 📊 Example Endpoints
+
+```bash
+# Health Check
+GET https://sentiment-api-vpmz.onrender.com/health
+
+# Analytics Summary
+GET https://sentiment-api-vpmz.onrender.com/api/v1/analytics/summary
+
+# Sentiment Bar Chart (PNG)
+GET https://sentiment-api-vpmz.onrender.com/api/v1/visualisations/sentiment-bar
+
+# Submit Feedback
+POST https://sentiment-api-vpmz.onrender.com/api/v1/feedback
+{
+  "roll_number": "CS2024001",
+  "gender": "Male",
+  "age": 20,
+  "academic_feedback": "Good",
+  "emotional_feedback": "Happy"
+}
+```
 
 ## Project Overview
 
@@ -13,7 +80,9 @@ automatically analyse the emotional and academic sentiment using ML models.
 It is designed to handle hundreds of concurrent users and is built following
 enterprise software engineering practices.
 
-## Tech Stack
+---
+
+## 🏗️ Tech Stack
 
 | Layer           | Technology           | Purpose                             |
 | --------------- | -------------------- | ----------------------------------- |
@@ -25,57 +94,90 @@ enterprise software engineering practices.
 | CI/CD           | GitHub Actions       | Automated test pipeline             |
 | Deployment      | GCP (planned)        | Cloud hosting at scale              |
 
-## Project Structure
+---
+
+## 📁 Project Structure
 
 ecp-2024/
 ├── app/
-│   ├── api/v1/endpoints/   ← API route handlers
-│   ├── core/               ← Config and settings
-│   ├── models/             ← Database models
-│   ├── schemas/            ← Pydantic request/response schemas
-│   └── services/           ← Business logic (sentiment analysis)
+│   ├── api/v1/endpoints/     # API route handlers
+│   ├── core/                 # Config, database, exceptions
+│   ├── models/               # SQLAlchemy ORM models
+│   ├── schemas/              # Pydantic request/response models
+│   ├── services/             # Business logic, ML, analytics
+│   └── main.py               # FastAPI application factory
 ├── tests/
-│   ├── unit/               ← Unit tests for individual functions
-│   └── integration/        ← End-to-end API tests
-├── docs/adrs/              ← Architecture Decision Records
-└── notebooks/              ← Original ML research notebook
+│   ├── unit/                 # Unit tests (mocks, services)
+│   ├── integration/          # API integration tests
+│   ├── load/                 # Locust load tests
+│   └── production/           # Production smoke tests
+├── docs/
+│   ├── ARCHITECTURE.md       # System design
+│   ├── PERFORMANCE.md        # Load test results
+│   ├── MONITORING.md         # Production monitoring
+│   └── RENDER_DEPLOYMENT.md  # Deployment guide
+├── scripts/
+│   ├── seed_database.py      # Database seeding
+│   └── train_model.py        # ML model training
+├── alembic/                  # Database migrations
+├── Dockerfile                # Container definition
+└── requirements.txt          # Python dependencies
 
-## Local Setup
+---
+
+## 🚀 Local Development
 
 ```bash
-# Clone the repository
+# 1. Clone repository
 git clone https://github.com/danyon-satyam/ecp-2024.git
 cd ecp-2024
 
-# Create and activate virtual environment
+# 2. Create virtual environment
 python -m venv venv
-venv\Scripts\activate        # Windows
-source venv/bin/activate     # Mac/Linux
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# Install dependencies
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# Run the API server
+# 4. Set environment variables
+export DATABASE_URL="postgresql://user:pass@localhost/sentiment_db"
+export APP_NAME="Student Sentiment Analysis API"
+
+# 5. Run database migrations
+alembic upgrade head
+
+# 6. Seed database
+python scripts/seed_database.py --count 100
+
+# 7. Start development server
+uvicorn app.main:app --reload --port 8000
+
+# 8. Open Swagger docs
+open http://localhost:8000/docs
 uvicorn app.main:app --reload
 ```
 
-The API will be live at `http://127.0.0.1:8000`
-Swagger UI available at `http://127.0.0.1:8000/docs`
+---
 
-## Running Tests
+## 🧪 Running Tests
 
 ```bash
-# Run all tests
-pytest
+# Install dependencies
+pip install -r requirements.txt
 
-# Run only unit tests
-pytest tests/unit/
+# Run all tests with coverage
+pytest --cov=app --cov-report=html
 
-# Run only integration tests
-pytest tests/integration/
+# Run specific test suites
+pytest tests/unit/ -v                    # Unit tests
+pytest tests/integration/ -v             # Integration tests
+pytest tests/production/ -v              # Production smoke tests
 
-# Run with coverage report
-pytest -v
+# Run load tests (local)
+locust -f tests/load/locustfile.py --host=http://localhost:8000
+
+# Run load tests (production)
+locust -f tests/load/locustfile.py --host=https://sentiment-api-vpmz.onrender.com
 ```
 
 ## API Endpoints
@@ -89,8 +191,35 @@ pytest -v
 | PATCH  | `/api/v1/feedback/{id}` | Update a feedback record      |
 | DELETE | `/api/v1/feedback/{id}` | Delete a feedback record      |
 
-## Developer
+---
 
-- **Project by:** Danyon Satyam
-- **Mentor / Client:** Pramit Dash
-- **Collaborator:** Samarth
+## 📚 Documentation
+
+* [Architecture Guide](docs/ARCHITECTURE.md) — System design, request flow, components
+* [Performance Report](docs/PERFORMANCE.md) — Load testing, benchmarks, bottlenecks
+* [Monitoring Guide](docs/MONITORING.md) — Production health checks, troubleshooting
+* [Deployment Guide](docs/RENDER_DEPLOYMENT.md) — Render.com deployment steps
+
+---
+
+## 🤝 Contributing
+
+This is an educational project for the ECP 2024 program. Not accepting external contributions.
+
+---
+
+## 📝 License
+
+The Copyright is reserverd by the Developer.
+
+---
+
+
+
+## 👤 Developer
+
+**Name: Satyam Mohapatra**
+
+**Mentor:** Pramit Dash
+
+**Program:** ECP 2024
